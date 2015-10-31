@@ -1,15 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using System;
+
+public delegate void InputEventHandler();
 
 public class InputManager : MonoBehaviour {
+    public event InputEventHandler onResetEvent;
+
     private const int NUM_WIDTH = 5;
     private const int NUM_HEIGHT = 5;
     private Vector3 basePosition;
     GameObject prefab;
     private bool isStartInput;
     public bool IsStartInput() { return isStartInput;}
+    private List<int> numberList;
 	void Start () {
-	   prefab = (GameObject)Resources.Load ("Prefabs/Input/InputButton");
+	   prefab = (GameObject)Resources.Load("Prefabs/Input/InputButton");
        basePosition =  new Vector3(32, 30, 0);
        for (int i = 0; i < NUM_WIDTH; i++)
        {
@@ -22,10 +29,11 @@ public class InputManager : MonoBehaviour {
             }
        }
        isStartInput = false;
-
+       numberList = new List<int>();
 	}
     public void OnChoiced(int i, int j)
     {
+        numberList.Add(j * 10 + i);
     }
 	void Update ()
     {
@@ -59,6 +67,14 @@ public class InputManager : MonoBehaviour {
     }
     private void OnEnd()
     {
+        GameManager.Instance().OnInputEnd(numberList);
+        Reset();
+    }
+    private void Reset()
+    {
+        isStartInput = false;
+        onResetEvent();
+        numberList.Clear();
     }
     private Vector3 GetButtonPosition(int i, int j)
     {
