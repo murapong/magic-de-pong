@@ -21,7 +21,7 @@ public class TopSceneController : MonoBehaviour {
     #region public method
     public void OnQuestTapped()
     {
-        Application.LoadLevel ("Result");
+        Application.LoadLevel ("Quest");
     }
     public void OnHelpTapped()
     {
