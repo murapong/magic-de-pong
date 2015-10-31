@@ -21,11 +21,11 @@ public class TopSceneController : MonoBehaviour {
     #region public method
     public void OnQuestTapped()
     {
-        Application.LoadLevel ("Quest");
+        Application.LoadLevel(Scenes.Quest);
     }
     public void OnHelpTapped()
     {
-        Application.LoadLevel ("Help");
+        Application.LoadLevel(Scenes.Help);
     }
     #endregion
 

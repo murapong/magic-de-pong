@@ -37,6 +37,6 @@ public class GameManager
     }
     public void OnTimeOver()
     {
-        Application.LoadLevel("Result");
+        Application.LoadLevel(Scenes.Result);
     }
 }
