@@ -1,43 +1,57 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class QuestSceneController : MonoBehaviour {
-	#region enum
+public class QuestSceneController : MonoBehaviour
+{
+    #region enum
 
-	#endregion
+    #endregion
 
-	#region const
+    #region const
 
-	#endregion
+    #endregion
 
-	#region public property
+    #region public property
 
-	#endregion
+    #endregion
 
-	#region private property
+    #region private property
 
-	#endregion
+    #endregion
 
-	#region public method
-	public void OnTopPressed()
-	{
+    #region public method
+
+    public void OnTopPressed()
+    {
         Application.LoadLevel("Top");
-	}
-	#endregion
+    }
 
-	#region private method
+    #endregion
 
-	#endregion
+    #region private method
 
-	#region event
+    IEnumerator WaitAndDamaged()
+    {
+        yield return new WaitForSeconds(3);
 
-	void Start () {
+        EnemyController.Instance.OnDamaged(1);
+    }
 
-	}
+    #endregion
 
-	void Update () {
+    #region event
 
-	}
+    void Start()
+    {
+        EnemyController.Instance.Appear(1);
 
-	#endregion
+        StartCoroutine(WaitAndDamaged());
+    }
+
+    void Update()
+    {
+
+    }
+
+    #endregion
 }
