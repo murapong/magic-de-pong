@@ -19,10 +19,20 @@ public class GameManager
     public void OnInputEnd(List<int> numberList)
     {
         SkillData data = SkillConverter.GetSkill(numberList);
+        Attack(data);
+    }
+    private void Attack(SkillData data)
+    {
         if (data != null)
         {
-            Debug.LogError("発動！" + data.prefab);
+            Debug.LogError("発動！" + data.effectName);
+            EffectManager.Instance.Show(data);
             EnemyController.Instance.OnDamaged(10);
         }
+    }
+    public void AttackDebug(int skillId)
+    {
+        SkillData data = SkillConverter.GetSkill(skillId);
+        Attack(data);
     }
 }

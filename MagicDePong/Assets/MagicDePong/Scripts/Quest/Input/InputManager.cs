@@ -52,6 +52,10 @@ public class InputManager : MonoBehaviour {
         {
             OnEnd();
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GameManager.Instance().AttackDebug(0);
+        }
     }
     private void UpdateTouch()
     {
