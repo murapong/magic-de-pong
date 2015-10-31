@@ -9,6 +9,11 @@ public class InputManager : MonoBehaviour {
     public event InputEventHandler onResetEvent;
     [SerializeField]
     private Canvas canvas;
+    [SerializeField]
+    private GameObject trail;
+    [SerializeField]
+    private Camera trailRendererCamera;
+
 
     private const int NUM_WIDTH = 5;
     private const int NUM_HEIGHT = 5;
@@ -30,6 +35,7 @@ public class InputManager : MonoBehaviour {
                 obj.GetComponent<InputButton>().Initialize(i, j, this, canvas.scaleFactor);
             }
        }
+       trailRendererCamera.orthographicSize = canvas.scaleFactor * canvas.GetComponent<RectTransform>().sizeDelta.x * 0.9f;
        isStartInput = false;
        numberList = new List<int>();
 	}
@@ -47,6 +53,10 @@ public class InputManager : MonoBehaviour {
         if (Input.GetMouseButtonDown(0))
         {
             isStartInput = true;
+        }
+        if (isStartInput && Input.GetMouseButton(0))
+        {
+            trail.transform.position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
         }
         if (Input.GetMouseButtonUp(0))
         {
@@ -67,6 +77,9 @@ public class InputManager : MonoBehaviour {
                     break;
                 case TouchPhase.Ended:
                     OnEnd();
+                    break;
+                case TouchPhase.Moved:
+                    trail.transform.position = new Vector3(touch.position.x, touch.position.y, 0);
                     break;
             }
         }
