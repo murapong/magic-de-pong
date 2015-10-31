@@ -3,6 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class SkillConverter {
+    public static SkillData GetSkill(int skillId)
+    {
+        return SkillData.GetData(skillId);
+    }
     public static SkillData GetSkill(List<int> numberList)
     {
         List<int> dataList = new List<int>();
