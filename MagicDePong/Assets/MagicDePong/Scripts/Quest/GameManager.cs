@@ -35,4 +35,8 @@ public class GameManager
         SkillData data = SkillConverter.GetSkill(skillId);
         Attack(data);
     }
+    public void OnTimeOver()
+    {
+        Application.LoadLevel("Result");
+    }
 }
