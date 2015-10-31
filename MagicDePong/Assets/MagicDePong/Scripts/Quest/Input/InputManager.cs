@@ -7,6 +7,8 @@ public delegate void InputEventHandler();
 
 public class InputManager : MonoBehaviour {
     public event InputEventHandler onResetEvent;
+    [SerializeField]
+    private Canvas canvas;
 
     private const int NUM_WIDTH = 5;
     private const int NUM_HEIGHT = 5;
@@ -17,7 +19,7 @@ public class InputManager : MonoBehaviour {
     private List<int> numberList;
 	void Start () {
 	   prefab = (GameObject)Resources.Load("Prefabs/Input/InputButton");
-       basePosition =  new Vector3(32, 30, 0);
+       basePosition =  new Vector3(74, 70, 0);
        for (int i = 0; i < NUM_WIDTH; i++)
        {
             for (int j = 0; j < NUM_HEIGHT; j++)
@@ -25,7 +27,7 @@ public class InputManager : MonoBehaviour {
                 Vector3 pos = GetButtonPosition(i, j);
                 GameObject obj = Instantiate(prefab, pos, Quaternion.identity) as GameObject;
                 obj.transform.SetParent(transform);
-                obj.GetComponent<InputButton>().Initialize(i, j, this);
+                obj.GetComponent<InputButton>().Initialize(i, j, this, canvas.scaleFactor);
             }
        }
        isStartInput = false;
@@ -78,7 +80,8 @@ public class InputManager : MonoBehaviour {
     }
     private Vector3 GetButtonPosition(int i, int j)
     {
-        return basePosition + new Vector3(i * (InputButton.SIZE_WIDTH - InputButton.SIZE_GAP),
-            j * (InputButton.SIZE_HEIGHT - InputButton.SIZE_GAP), 0);
+        float scale = canvas.scaleFactor;
+        return (basePosition + new Vector3(i * (InputButton.SIZE_RADIUS * 2- InputButton.SIZE_GAP),
+            j * (InputButton.SIZE_RADIUS * 2 - InputButton.SIZE_GAP), 0)) * scale;
     }
 }
