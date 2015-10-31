@@ -2,46 +2,46 @@
 using System.Collections;
 
 public class TopSceneController : MonoBehaviour {
-	#region enum
+    #region enum
 
-	#endregion
+    #endregion
 
-	#region const
+    #region const
 
-	#endregion
+    #endregion
 
-	#region public property
+    #region public property
 
-	#endregion
+    #endregion
 
-	#region private property
+    #region private property
 
-	#endregion
+    #endregion
 
-	#region public method
-	public void OnQuestTapped()
-	{
-		Application.LoadLevel ("Result");
-	}
-	public void OnHelpTapped()
-	{
-		Application.LoadLevel ("Help");
-	}
-	#endregion
+    #region public method
+    public void OnQuestTapped()
+    {
+        Application.LoadLevel ("Result");
+    }
+    public void OnHelpTapped()
+    {
+        Application.LoadLevel ("Help");
+    }
+    #endregion
 
-	#region private method
+    #region private method
 
-	#endregion
+    #endregion
 
-	#region event
+    #region event
 
-	void Start () {
+    void Start () {
 
-	}
+    }
 
-	void Update () {
+    void Update () {
 
-	}
+    }
 
-	#endregion
+    #endregion
 }
