@@ -3,94 +3,96 @@ using System.Collections;
 
 public class SoundManager : MonoBehaviour
 {
-	#region enum
+    #region enum
 
-	#endregion
+    #endregion
 
-	#region const
+    #region const
 
-	#endregion
+    #endregion
 
-	#region public property
+    #region public property
 
-	public static SoundManager Instance;
+    public static SoundManager Instance;
 
-	#endregion
+    #endregion
 
-	#region private property
+    #region private property
 
-	#region AudioClip
+    #region AudioClip
 
-	/// <summary>
-	/// 決定音。
-	/// </summary>
-	[SerializeField]
-	AudioClip audioClipYesSE;
+    /// <summary>
+    /// 決定音。
+    /// </summary>
+    [SerializeField]
+    AudioClip audioClipYesSE;
 
-	/// <summary>
-	/// ゲームオーバーSE。
-	/// </summary>
-	[SerializeField]
-	AudioClip audioClipGameOverSE;
+    /// <summary>
+    /// ゲームオーバーSE。
+    /// </summary>
+    [SerializeField]
+    AudioClip audioClipGameOverSE;
 
-	#endregion
+    #endregion
 
-	#region AudioSource
+    #region AudioSource
 
-	AudioSource audioSourceYes;
+    AudioSource audioSourceYes;
 
-	AudioSource audioSourceGameOver;
+    AudioSource audioSourceGameOver;
 
-	#endregion
+    #endregion
 
-	#endregion
+    #endregion
 
-	#region public method
+    #region public method
 
-	/// <summary>
-	/// 決定音を再生する。
-	/// </summary>
-	public void PlayYesSE ()
-	{
-		audioSourceYes.Play ();
-	}
+    /// <summary>
+    /// 決定音を再生する。
+    /// </summary>
+    public void PlayYesSE()
+    {
+        audioSourceYes.Play();
+    }
 
-	/// <summary>
-	/// ゲームオーバーSEを再生する。
-	/// </summary>
-	public void PlayGameOverSE ()
-	{
-		audioSourceGameOver.Play ();
-	}
+    /// <summary>
+    /// ゲームオーバーSEを再生する。
+    /// </summary>
+    public void PlayGameOverSE()
+    {
+        audioSourceGameOver.Play();
+    }
 
-	#endregion
+    #endregion
 
-	#region private method
+    #region private method
 
-	#endregion
+    #endregion
 
-	#region event
+    #region event
 
-	void Awake ()
-	{
-		Instance = this;
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+        
+        Instance = this;
 
-		InitSound ();
-	}
+        InitSound();
+    }
 
-	/// <summary>
-	/// サウンドの初期化を行う。
-	/// </summary>
-	void InitSound ()
-	{
-		audioSourceYes = gameObject.AddComponent<AudioSource> ();
-		audioSourceYes.clip = audioClipYesSE;
-		audioSourceYes.loop = false;
+    /// <summary>
+    /// サウンドの初期化を行う。
+    /// </summary>
+    void InitSound()
+    {
+        audioSourceYes = gameObject.AddComponent<AudioSource>();
+        audioSourceYes.clip = audioClipYesSE;
+        audioSourceYes.loop = false;
 
-		audioSourceGameOver = gameObject.AddComponent<AudioSource> ();
-		audioSourceGameOver.clip = audioClipGameOverSE;
-		audioSourceGameOver.loop = false;
-	}
+        audioSourceGameOver = gameObject.AddComponent<AudioSource>();
+        audioSourceGameOver.clip = audioClipGameOverSE;
+        audioSourceGameOver.loop = false;
+    }
 
-	#endregion
+    #endregion
 }
