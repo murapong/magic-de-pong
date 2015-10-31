@@ -22,6 +22,7 @@ public class GameManager
         if (data != null)
         {
             Debug.LogError("発動！" + data.prefab);
+            EnemyController.Instance.OnDamaged(10);
         }
     }
 }
