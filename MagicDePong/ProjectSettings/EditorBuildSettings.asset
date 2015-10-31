@@ -6,10 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/MagicDePong/Scenes/Help.unity
+    path: Assets/MagicDePong/Scenes/Intro.unity
+  - enabled: 1
+    path: Assets/MagicDePong/Scenes/Top.unity
   - enabled: 1
     path: Assets/MagicDePong/Scenes/Quest.unity
   - enabled: 1
     path: Assets/MagicDePong/Scenes/Result.unity
   - enabled: 1
-    path: Assets/MagicDePong/Scenes/Top.unity
+    path: Assets/MagicDePong/Scenes/Help.unity
