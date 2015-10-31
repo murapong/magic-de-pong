@@ -19,11 +19,35 @@ public class InputManager : MonoBehaviour {
                 obj.name = "button_" + i.ToString() + "_" + j.ToString();
             }
        }
-	}
+       startInput = false;
 
+	}
+    private bool startInput;
 	void Update ()
     {
+        UpdateMouse();
+        UpdateTouch();
 	}
+    private void UpdateMouse()
+    {
+    }
+    private void UpdateTouch()
+    {
+        foreach (Touch touch in Input.touches) {
+            switch(touch.phase)
+            {
+                case TouchPhase.Began:
+                    startInput = true;
+                    break;
+                case TouchPhase.Ended:
+                    OnEnd();
+                    break;
+            }
+        }
+    }
+    private void OnEnd()
+    {
+    }
     private Vector3 GetButtonPosition(int i, int j)
     {
         return basePosition + new Vector3(i * (InputButton.SIZE_WIDTH - InputButton.SIZE_GAP),
