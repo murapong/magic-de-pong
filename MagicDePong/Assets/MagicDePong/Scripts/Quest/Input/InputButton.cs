@@ -8,6 +8,7 @@ public class InputButton : Button, ICanvasRaycastFilter, IPointerEnterHandler {
     public const int SIZE_HEIGHT = 82;
     public const int SIZE_GAP = 15;//画像自体のサイズと円の部分との隙間
 
+
     private RectTransform rectTransform;
     private Image image;
     private bool isTapped;
@@ -20,14 +21,20 @@ public class InputButton : Button, ICanvasRaycastFilter, IPointerEnterHandler {
         rectTransform = GetComponent (typeof (RectTransform)) as RectTransform;
         rectTransform.sizeDelta = new Vector2(SIZE_WIDTH, SIZE_WIDTH);
         image = GetComponent<Image>();
-        isTapped = false;
+        Reset();
     }
     public void Initialize(int i, int j, InputManager manager)
     {
         this.i = i;
         this.j = j;
         this.inputManager = manager;
+        manager.onResetEvent += Reset;
         name = "button_" + i.ToString() + "_" + j.ToString();
+    }
+    public void Reset()
+    {
+        image.color = Color.white;
+        isTapped = false;
     }
     public bool IsRaycastLocationValid (Vector2 sp, Camera eventCamera)
     {
