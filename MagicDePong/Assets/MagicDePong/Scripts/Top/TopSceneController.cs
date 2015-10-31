@@ -19,7 +19,14 @@ public class TopSceneController : MonoBehaviour {
 	#endregion
 
 	#region public method
-
+	public void OnQuestTapped()
+	{
+		Application.LoadLevel ("Quest");
+	}
+	public void OnHelpTapped()
+	{
+		Application.LoadLevel ("Help");
+	}
 	#endregion
 
 	#region private method
