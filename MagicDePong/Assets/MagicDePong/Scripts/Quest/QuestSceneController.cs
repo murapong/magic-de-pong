@@ -44,8 +44,8 @@ public class QuestSceneController : MonoBehaviour
     void Start()
     {
         EnemyController.Instance.Appear(1);
-
-        StartCoroutine(WaitAndDamaged());
+//
+//        StartCoroutine(WaitAndDamaged());
     }
 
     void Update()
