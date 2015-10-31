@@ -23,7 +23,7 @@ public class QuestSceneController : MonoBehaviour
 
     public void OnTopPressed()
     {
-        Application.LoadLevel("Top");
+        Application.LoadLevel(Scenes.Top);
     }
 
     #endregion

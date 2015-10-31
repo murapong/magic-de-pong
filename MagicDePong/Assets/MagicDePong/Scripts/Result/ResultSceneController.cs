@@ -29,7 +29,7 @@ public class ResultSceneController : MonoBehaviour {
     #region public method
     public void OnTopPressed()
     {
-        Application.LoadLevel ("Top");
+        Application.LoadLevel(Scenes.Top);
     }
     #endregion
 

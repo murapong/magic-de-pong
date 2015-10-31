@@ -27,6 +27,7 @@ public class GameManager
         {
             Debug.LogError("発動！" + data.effectName);
             EffectManager.Instance.Show(data);
+            Score.UseMagic();
             EnemyController.Instance.OnDamaged(10);
         }
     }
@@ -34,5 +35,9 @@ public class GameManager
     {
         SkillData data = SkillConverter.GetSkill(skillId);
         Attack(data);
+    }
+    public void OnTimeOver()
+    {
+        Application.LoadLevel(Scenes.Result);
     }
 }
