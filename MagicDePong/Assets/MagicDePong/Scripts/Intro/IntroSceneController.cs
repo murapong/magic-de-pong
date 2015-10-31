@@ -31,6 +31,8 @@ public class IntroSceneController : MonoBehaviour
 
     void Start()
     {
+        Application.targetFrameRate = 60;
+        
         Application.LoadLevel(Scenes.Top);
     }
 
