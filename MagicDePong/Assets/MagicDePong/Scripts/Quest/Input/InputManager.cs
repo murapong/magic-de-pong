@@ -6,6 +6,8 @@ public class InputManager : MonoBehaviour {
     private const int NUM_HEIGHT = 5;
     private Vector3 basePosition;
     GameObject prefab;
+    private bool isStartInput;
+    public bool IsStartInput() { return isStartInput;}
 	void Start () {
 	   prefab = (GameObject)Resources.Load ("Prefabs/Input/InputButton");
        basePosition =  new Vector3(32, 30, 0);
@@ -16,13 +18,15 @@ public class InputManager : MonoBehaviour {
                 Vector3 pos = GetButtonPosition(i, j);
                 GameObject obj = Instantiate(prefab, pos, Quaternion.identity) as GameObject;
                 obj.transform.SetParent(transform);
-                obj.name = "button_" + i.ToString() + "_" + j.ToString();
+                obj.GetComponent<InputButton>().Initialize(i, j, this);
             }
        }
-       startInput = false;
+       isStartInput = false;
 
 	}
-    private bool startInput;
+    public void OnChoiced(int i, int j)
+    {
+    }
 	void Update ()
     {
         UpdateMouse();
@@ -30,6 +34,14 @@ public class InputManager : MonoBehaviour {
 	}
     private void UpdateMouse()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
+            isStartInput = true;
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            OnEnd();
+        }
     }
     private void UpdateTouch()
     {
@@ -37,7 +49,7 @@ public class InputManager : MonoBehaviour {
             switch(touch.phase)
             {
                 case TouchPhase.Began:
-                    startInput = true;
+                    isStartInput = true;
                     break;
                 case TouchPhase.Ended:
                     OnEnd();
