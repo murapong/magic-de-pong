@@ -9,7 +9,11 @@ public class SkillData
     public string effectName;
     public List<int> combination;
     public int id;
-    public int rotationX;
+    public int rotationX;//奥への回転
+    public float positionUp;
+    public float positionRight;
+    public float positionFront;
+    public float aliveTime;//何秒表示するか
 
     public static SkillData GetData(int i)
     {
@@ -19,7 +23,8 @@ public class SkillData
         {
             case 0:
                 data.effectName = "fire01";
-                data.rotationX = 90;
+                data.rotationX = 45;
+                data.positionUp = 2.9f;
                 // data.combination.Add(40);
                 // data.combination.Add(41);
                 // data.combination.Add(42);
@@ -36,6 +41,9 @@ public class SkillData
                 break;
             case 1:
                 data.effectName = "blizzard";
+                data.positionUp = 2.9f;
+                data.positionRight = - 12.9f;
+                data.positionFront = 2.0f;
                 data.combination.Add(31);
                 data.combination.Add(32);
                 data.combination.Add(33);
@@ -56,5 +64,9 @@ public class SkillData
         effectName = "";
         combination = new List<int>();
         rotationX = 0;
+        positionUp = 0;
+        positionRight = 0;
+        positionFront = 0;
+        aliveTime = 10;
     }
 }
