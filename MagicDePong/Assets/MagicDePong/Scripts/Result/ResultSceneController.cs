@@ -3,62 +3,62 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class ResultSceneController : MonoBehaviour {
-	#region enum
+    #region enum
 
-	#endregion
+    #endregion
 
-	#region const
+    #region const
 
-	#endregion
+    #endregion
 
-	#region public property
+    #region public property
 
-	#endregion
+    #endregion
 
-	#region private property
-	[SerializeField]
-	private NumberAnimator killNumber;
-	[SerializeField]
-	private NumberAnimator scoreAnimator;
-	[SerializeField]
-	private Text highScore;
+    #region private property
+    [SerializeField]
+    private NumberAnimator killNumber;
+    [SerializeField]
+    private NumberAnimator scoreAnimator;
+    [SerializeField]
+    private Text highScore;
 
-	private int frame;
-	#endregion
+    private int frame;
+    #endregion
 
-	#region public method
-	public void OnTopPressed()
-	{
-		Application.LoadLevel ("Top");
-	}
-	#endregion
+    #region public method
+    public void OnTopPressed()
+    {
+        Application.LoadLevel ("Top");
+    }
+    #endregion
 
-	#region private method
+    #region private method
 
-	#endregion
+    #endregion
 
-	#region event
+    #region event
 
-	void Start ()
-	{
-		int score = 1000;
-		highScore.text = score.ToString();
-		frame = 0;
-	}
+    void Start ()
+    {
+        int score = 1000;
+        highScore.text = score.ToString();
+        frame = 0;
+    }
 
-	void Update ()
-	{
-		frame++;
-		if (frame == 16)
-		{
-			killNumber.StartAnimation();
-		}
-		if (frame == 80)
-		{
-			scoreAnimator.StartAnimation();
-		}
+    void Update ()
+    {
+        frame++;
+        if (frame == 16)
+        {
+            killNumber.StartAnimation();
+        }
+        if (frame == 80)
+        {
+            scoreAnimator.StartAnimation();
+        }
 
-	}
+    }
 
-	#endregion
+    #endregion
 }
