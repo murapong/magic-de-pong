@@ -36,7 +36,7 @@ public class TopSceneController : MonoBehaviour {
     #region event
 
     void Start () {
-
+        Score.Initialize();
     }
 
     void Update () {
