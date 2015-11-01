@@ -34,6 +34,8 @@ public class EnemyController : MonoBehaviour
     public int MaxHP;
     public HPGauge hpGauge;
 
+    public EnemyData data;
+
     /// <summary>
     /// 敵ID。
     /// </summary>
@@ -68,10 +70,15 @@ public class EnemyController : MonoBehaviour
     /// </summary>
     /// <param name="point">被ダメージポイント。</param>
     /// <param name="delay">アニメーション遅延秒数</param>
-    public void OnDamaged(int point, float delaySec = 0f)
+    public void OnAttacked(int point, float delaySec)
     {
         Debug.Log("OnDamaged");
+        StartCoroutine(WaitAndDamaged(point, delaySec));
 
+    }
+    IEnumerator WaitAndDamaged(int point, float delaySec)
+    {
+        yield return new WaitForSeconds(delaySec);
         HP = HP - point;
         hpGauge.SetPercent((float) HP / MaxHP);
         animator.SetBool(flagNameIsDamaged, true);

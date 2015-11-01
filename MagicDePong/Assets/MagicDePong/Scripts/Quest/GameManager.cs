@@ -18,6 +18,9 @@ public class GameManager
 
     private GameManager()
     {
+    }
+    public void Initialize()
+    {
         GameObject obj = GameObject.Find("EnemyGenerator");
         if (obj == null)
         {
@@ -25,6 +28,7 @@ public class GameManager
             return;
         }
         enemyGenerator = obj.GetComponent<EnemyGenerator>();
+        Score.Initialize();
     }
 
     public void OnInputEnd(List<int> numberList)
@@ -47,7 +51,7 @@ public class GameManager
                 Debug.LogError("attack is failed");
                 return;
             }
-            enemyObject.OnDamaged(10);
+            enemyObject.OnAttacked(Damage.Get(data.rare, data.element, enemyObject.data.element), data.delayAttack);
         }
     }
 
