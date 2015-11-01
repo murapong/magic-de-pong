@@ -8,8 +8,6 @@ public class EnemyData
 
     public static EnemyData Get(int id)
     {
-        if (id == 2)
-            return null;
         switch(id)
         {
             case 0:  return new EnemyData(  10, SkillData.Element.Fire);
