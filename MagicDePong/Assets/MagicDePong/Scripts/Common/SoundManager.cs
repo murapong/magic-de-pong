@@ -57,6 +57,66 @@ public class SoundManager : MonoBehaviour
     [SerializeField]
     AudioClip audioClipResultBGM;
 
+    /// <summary>
+    /// 絶対零度エフェクトSE。
+    /// </summary>
+    [SerializeField]
+    AudioClip audioClipAbsolute;
+
+    /// <summary>
+    /// 通常攻撃エフェクトSE。
+    /// </summary>
+    [SerializeField]
+    AudioClip audioClipAttack;
+
+    /// <summary>
+    /// ブリザードエフェクトSE。
+    /// </summary>
+    [SerializeField]
+    AudioClip audioClipBlizzard;
+
+    /// <summary>
+    /// 火エフェクトSE。
+    /// </summary>
+    [SerializeField]
+    AudioClip audioClipFire;
+
+    /// <summary>
+    /// 炎エフェクトSE。
+    /// </summary>
+    [SerializeField]
+    AudioClip audioClipFlame;
+
+    /// <summary>
+    /// 氷エフェクトSE。
+    /// </summary>
+    [SerializeField]
+    AudioClip audioClipIce;
+
+    /// <summary>
+    /// メテオエフェクトSE。
+    /// </summary>
+    [SerializeField]
+    AudioClip audioClipMeteor;
+
+    /// <summary>
+    /// 雷エフェクトSE。
+    /// </summary>
+    [SerializeField]
+    AudioClip audioClipThunder;
+
+    /// <summary>
+    /// 雷雨エフェクトSE。
+    /// </summary>
+    [SerializeField]
+    AudioClip audioClipThunderStorm;
+
+    /// <summary>
+    /// 竜巻エフェクトSE。
+    /// </summary>
+    [SerializeField]
+    AudioClip audioClipWhirl;
+
     #endregion
 
     #region AudioSource
@@ -68,6 +128,8 @@ public class SoundManager : MonoBehaviour
     AudioSource audioSourceDie;
 
     AudioSource audioSourceBGM;
+
+    AudioSource audioSourceEffect;
 
     #endregion
 
@@ -131,9 +193,64 @@ public class SoundManager : MonoBehaviour
         audioSourceBGM.Play();
     }
 
+    /// <summary>
+    /// エフェクトに対応したSEを再生する。
+    /// </summary>
+    /// <param name="name">Name.</param>
+    public void PlayEffectSEByName(string name)
+    {
+        audioSourceEffect.clip = GetAudioClipByName(name);
+        audioSourceEffect.loop = false;
+        audioSourceEffect.Play();
+    }
+
     #endregion
 
     #region private method
+
+    AudioClip GetAudioClipByName(string name)
+    {
+        AudioClip clip;
+        
+        switch (name)
+        {
+            case "hit_normal":
+                clip = audioClipAttack;
+                break;
+            case "dmg_fire1":
+                clip = audioClipFire;
+                break;
+            case "dmg_ice1":
+                clip = audioClipIce;
+                break;
+            case "thunder02":
+                clip = audioClipThunder;
+                break;
+            case "meteor01":
+                clip = audioClipMeteor;
+                break;
+            case "blizzard":
+                clip = audioClipBlizzard;
+                break;
+            case "whirlwind":
+                clip = audioClipWhirl;
+                break;
+            case "fire01":
+                clip = audioClipFlame;
+                break;
+            case "icebreak01":
+                clip = audioClipAbsolute;
+                break;
+            case "thunderstorm":
+                clip = audioClipThunderStorm;
+                break;
+            default:
+                clip = null;               
+                break;
+        }
+
+        return clip;
+    }
 
     #endregion
 
@@ -164,6 +281,8 @@ public class SoundManager : MonoBehaviour
         audioSourceDie = gameObject.AddComponent<AudioSource>();
 
         audioSourceBGM = gameObject.AddComponent<AudioSource>();
+
+        audioSourceEffect = gameObject.AddComponent<AudioSource>();
     }
 
     #endregion

@@ -19,6 +19,7 @@ public class GameManager
     private GameManager()
     {
     }
+
     public void Initialize()
     {
         GameObject obj = GameObject.Find("EnemyGenerator");
@@ -44,6 +45,7 @@ public class GameManager
             Debug.LogError("発動！" + data.effectName);
             EffectManager.Instance.Show(data);
             Score.UseMagic(data.rare);
+            SoundManager.Instance.PlayEffectSEByName(data.effectName);
 
             EnemyController enemyObject = enemyGenerator.GetCurrentEnemy();
             if (enemyObject == null)
@@ -65,6 +67,7 @@ public class GameManager
     {
         Application.LoadLevel(Scenes.Result);
     }
+
     public void OnAllKilled()
     {
         Application.LoadLevel(Scenes.Result);
