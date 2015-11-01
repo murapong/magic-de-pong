@@ -515,8 +515,8 @@ public class SkillData
                 break;
             case 81:
                 data.effectName = "thunderstorm";
-                data.positionUp = 3f;
-                data.positionRight = -10f;
+                data.positionUp = 1f;
+                data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Wind;
                 data.rare = 4;
