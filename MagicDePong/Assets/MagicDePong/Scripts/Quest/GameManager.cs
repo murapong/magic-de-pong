@@ -51,7 +51,8 @@ public class GameManager
                 Debug.LogError("attack is failed");
                 return;
             }
-            enemyObject.OnAttacked(Damage.Get(data.rare, data.element, enemyObject.data.element), data.delayAttack);
+            Damage.Type type = Damage.GetType(data.element, enemyObject.data.element);
+            enemyObject.OnAttacked(Damage.Get(data.rare, type), type, data.delayAttack);
         }
     }
 

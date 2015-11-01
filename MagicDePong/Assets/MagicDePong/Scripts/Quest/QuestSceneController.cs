@@ -43,10 +43,10 @@ public class QuestSceneController : MonoBehaviour
 
     void Start()
     {
-        SoundManager.Instance.PlayQuestBGM();
         EnemyGenerator.Instance.Initialize();
         EnemyGenerator.Instance.AppearNext();
         GameManager.Instance().Initialize();
+        SoundManager.Instance.PlayQuestBGM();
 
 //        StartCoroutine(WaitAndDamaged());
     }
