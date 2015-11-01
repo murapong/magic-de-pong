@@ -42,7 +42,9 @@ MonoBehaviour:
   audioClipYesSE: {fileID: 8300000, guid: 2ba0a63e56874498cafe68867be087a8, type: 3}
   audioClipAppearSE: {fileID: 0}
   audioClipGameOverSE: {fileID: 0}
+  audioClipTopBGM: {fileID: 8300000, guid: 03596fabe140b4d8fa0fc15badcb2e7d, type: 3}
   audioClipQuestBGM: {fileID: 8300000, guid: 89bfbf043dd5b463ea040074c7f797d9, type: 3}
+  audioClipResultBGM: {fileID: 8300000, guid: 305cb1076a8d84ec3aa3da98a1922037, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

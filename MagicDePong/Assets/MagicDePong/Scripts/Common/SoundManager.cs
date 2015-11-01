@@ -51,6 +51,12 @@ public class SoundManager : MonoBehaviour
     [SerializeField]
     AudioClip audioClipQuestBGM;
 
+    /// <summary>
+    /// リザルトBGM
+    /// </summary>
+    [SerializeField]
+    AudioClip audioClipResultBGM;
+
     #endregion
 
     #region AudioSource
@@ -109,6 +115,16 @@ public class SoundManager : MonoBehaviour
     public void PlayQuestBGM()
     {
         audioSourceBGM.clip = audioClipQuestBGM;
+        audioSourceBGM.loop = true;
+        audioSourceBGM.Play();
+    }
+
+    /// <summary>
+    /// リザルトBGMを再生する。
+    /// </summary>
+    public void PlayResultBGM()
+    {
+        audioSourceBGM.clip = audioClipResultBGM;
         audioSourceBGM.loop = true;
         audioSourceBGM.Play();
     }

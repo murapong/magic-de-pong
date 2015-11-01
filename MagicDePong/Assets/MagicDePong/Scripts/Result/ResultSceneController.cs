@@ -2,7 +2,8 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class ResultSceneController : MonoBehaviour {
+public class ResultSceneController : MonoBehaviour
+{
     #region enum
 
     #endregion
@@ -16,6 +17,7 @@ public class ResultSceneController : MonoBehaviour {
     #endregion
 
     #region private property
+
     [SerializeField]
     private NumberAnimator killNumber;
     [SerializeField]
@@ -24,13 +26,16 @@ public class ResultSceneController : MonoBehaviour {
     private Text highScore;
 
     private int frame;
+
     #endregion
 
     #region public method
+
     public void OnTopPressed()
     {
         Application.LoadLevel(Scenes.Top);
     }
+
     #endregion
 
     #region private method
@@ -39,14 +44,16 @@ public class ResultSceneController : MonoBehaviour {
 
     #region event
 
-    void Start ()
+    void Start()
     {
+        SoundManager.Instance.PlayResultBGM();
+
         int score = 1000;
         highScore.text = score.ToString();
         frame = 0;
     }
 
-    void Update ()
+    void Update()
     {
         frame++;
         if (frame == 16)
