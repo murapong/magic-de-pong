@@ -45,8 +45,8 @@ public class SkillData
                 break;
             case 1:
                 data.effectName = "blizzard";
-                data.positionUp = 2.9f;
-                data.positionRight = - 12.9f;
+                data.positionUp = 3f;
+                data.positionRight = -10f;
                 data.positionFront = 2.0f;
                 data.combination.Add(31);
                 data.combination.Add(32);
