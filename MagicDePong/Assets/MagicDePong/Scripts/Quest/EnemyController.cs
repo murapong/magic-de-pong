@@ -58,6 +58,8 @@ public class EnemyController : MonoBehaviour
         SpriteRenderer sr = GetComponent<SpriteRenderer>();
         sr.sprite = sp;
 
+        hpGauge.SetPercent(1);
+
         SoundManager.Instance.PlayAppearSE();
     }
 
