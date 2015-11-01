@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TopSceneController : MonoBehaviour {
+public class TopSceneController : MonoBehaviour
+{
     #region enum
 
     #endregion
@@ -19,14 +20,17 @@ public class TopSceneController : MonoBehaviour {
     #endregion
 
     #region public method
+
     public void OnQuestTapped()
     {
         Application.LoadLevel(Scenes.Quest);
     }
+
     public void OnHelpTapped()
     {
         Application.LoadLevel(Scenes.Help);
     }
+
     #endregion
 
     #region private method
@@ -35,11 +39,15 @@ public class TopSceneController : MonoBehaviour {
 
     #region event
 
-    void Start () {
+    void Start()
+    {
+        SoundManager.Instance.PlayTopBGM();
+
         Score.Initialize();
     }
 
-    void Update () {
+    void Update()
+    {
 
     }
 

@@ -57,6 +57,8 @@ public class EnemyController : MonoBehaviour
         var sp = Resources.Load<Sprite>("Sprites/Quest/Enemy/" + GetSpriteName(ID));
         SpriteRenderer sr = GetComponent<SpriteRenderer>();
         sr.sprite = sp;
+
+        SoundManager.Instance.PlayAppearSE();
     }
 
     /// <summary>
