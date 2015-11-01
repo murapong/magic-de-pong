@@ -38,10 +38,19 @@ public class InputManager : MonoBehaviour {
        trailRendererCamera.orthographicSize = canvas.scaleFactor * canvas.GetComponent<RectTransform>().sizeDelta.x * 0.9f;
        isStartInput = false;
        numberList = new List<int>();
+       GameManager.Instance().inputManager = this;
 	}
     public void OnChoiced(int i, int j)
     {
         numberList.Add(j * 10 + i);
+    }
+    public void SetElement(SkillData.Element type)
+    {
+        gameObject.SetActive(false);
+    }
+    public void OpenLock()
+    {
+        gameObject.SetActive(true);
     }
 	void Update ()
     {
