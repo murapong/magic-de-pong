@@ -9,6 +9,7 @@ public class SkillData
         Fire,
         Water,
         Wind,
+        Normal,
     }
     public static int DataCount = 82;
 

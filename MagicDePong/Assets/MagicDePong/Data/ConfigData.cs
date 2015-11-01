@@ -8,7 +8,7 @@ public class ConfigData
 	//戦闘時間
 	public static int BattleTime = 50;
     //属性が有利な時のダメージ
-    public static float StringElementDamage = 2f;
+    public static float StrongElementDamage = 2f;
     //属性が不利な時のダメージ
     public static float WeakElementDamage = 0.1f;
     public static int Rare1Damage = 10;
