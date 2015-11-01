@@ -23,11 +23,15 @@ public class TopSceneController : MonoBehaviour
 
     public void OnQuestTapped()
     {
+        SoundManager.Instance.PlayYesSE();
+        
         Application.LoadLevel(Scenes.Quest);
     }
 
     public void OnHelpTapped()
     {
+        SoundManager.Instance.PlayYesSE();
+
         Application.LoadLevel(Scenes.Help);
     }
 

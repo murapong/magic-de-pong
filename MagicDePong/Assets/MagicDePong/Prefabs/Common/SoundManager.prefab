@@ -39,7 +39,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62ae107bbc03a453e8f54d51af6b119a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClipYesSE: {fileID: 8300000, guid: 2ba0a63e56874498cafe68867be087a8, type: 3}
+  audioClipYesSE: {fileID: 8300000, guid: 631486e9e071e4c0bacfca6362131371, type: 3}
   audioClipAppearSE: {fileID: 0}
   audioClipGameOverSE: {fileID: 0}
   audioClipTopBGM: {fileID: 8300000, guid: 03596fabe140b4d8fa0fc15badcb2e7d, type: 3}
@@ -55,7 +55,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: audioClipYesSE
       value: 
-      objectReference: {fileID: 8300000, guid: 2ba0a63e56874498cafe68867be087a8, type: 3}
+      objectReference: {fileID: 8300000, guid: 631486e9e071e4c0bacfca6362131371, type: 3}
     - target: {fileID: 0}
       propertyPath: audioClipAppearSE
       value: 
