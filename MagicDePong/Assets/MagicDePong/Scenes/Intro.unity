@@ -252,6 +252,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11414472, guid: 536d5c1ea91934b508a74c38c01ffef5, type: 2}
+      propertyPath: audioClipTopBGM
+      value: 
+      objectReference: {fileID: 8300000, guid: 03596fabe140b4d8fa0fc15badcb2e7d, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 536d5c1ea91934b508a74c38c01ffef5, type: 2}
   m_IsPrefabParent: 0
