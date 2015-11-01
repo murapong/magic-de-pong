@@ -25,6 +25,7 @@ public class SkillData
     public int skillIconHeight;//スキル名画像の縦の長さ
     public int rare;
     public Element element;
+    public float delayAttack;
 
     public static SkillData GetData(int i)
     {
@@ -558,5 +559,6 @@ public class SkillData
         skillIconWidth = 100;
         element = Element.Fire;
         rare = 1;
+        delayAttack = 0.2f;
     }
 }
