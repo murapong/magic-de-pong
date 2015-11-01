@@ -53,7 +53,7 @@ public class QuestSceneController : MonoBehaviour
 
     void Update()
     {
-
+        GameManager.Instance().Update(Time.deltaTime);
     }
 
     #endregion
