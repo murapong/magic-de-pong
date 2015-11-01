@@ -4,6 +4,12 @@ using System.Collections.Generic;
 
 public class SkillData
 {
+    public enum Element
+    {
+        Fire,
+        Water,
+        Wind,
+    }
     public static int DataCount = 91;
 
     public string effectName;
@@ -17,6 +23,8 @@ public class SkillData
     public int skillIconId;
     public int skillIconWidth;//スキル名画像の横の長さ
     public int skillIconHeight;//スキル名画像の縦の長さ
+    public int rare;
+    public Element element;
 
     public static SkillData GetData(int i)
     {
@@ -29,6 +37,7 @@ public class SkillData
                 data.positionUp = 3f;
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
+                data.element = Element.Fire;
                 data.combination.Add(40);
                 data.combination.Add(41);
                 data.combination.Add(42);
@@ -38,6 +47,7 @@ public class SkillData
                 break;
             case 2:
                 data.effectName = "dmg_fire1";
+                data.rare = 2;
                 data.positionUp = 3f;
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
@@ -273,5 +283,7 @@ public class SkillData
         skillIconId = 0;
         skillIconWidth = 100;
         skillIconWidth = 100;
+        element = Element.Fire;
+        rare = 1;
     }
 }

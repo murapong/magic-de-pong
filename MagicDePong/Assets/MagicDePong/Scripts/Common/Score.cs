@@ -3,14 +3,16 @@ using System.Collections;
 
 public class Score
 {
-	private static int magicCount = 0;
+	private static int magicCount = 3;
 	private static int hightScore = 0;
+	public static int GetMagicCount() { return magicCount;}
+
 	public static void Initialize()
 	{
 		magicCount = 0;
 	}
-	public static void UseMagic()
+	public static void UseMagic(int rare)
 	{
-		magicCount++;
+		magicCount+= rare;
 	}
 }
