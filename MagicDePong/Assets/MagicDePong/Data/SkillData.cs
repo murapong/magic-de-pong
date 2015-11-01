@@ -6,9 +6,14 @@ public class SkillData
 {
     public static int DataCount = 2;
 
-    public string prefab;
+    public string effectName;
     public List<int> combination;
     public int id;
+    public int rotationX;//奥への回転
+    public float positionUp;
+    public float positionRight;
+    public float positionFront;
+    public float aliveTime;//何秒表示するか
 
     public static SkillData GetData(int i)
     {
@@ -17,23 +22,28 @@ public class SkillData
         switch(i)
         {
             case 0:
-                data.prefab = "fire01";
-                data.combination.Add(40);
-                data.combination.Add(41);
-                data.combination.Add(42);
-                data.combination.Add(43);
-                data.combination.Add(44);
+                data.effectName = "fire01";
+                data.rotationX = 45;
+                data.positionUp = 2.9f;
+                // data.combination.Add(40);
+                // data.combination.Add(41);
+                // data.combination.Add(42);
+                // data.combination.Add(43);
+                // data.combination.Add(44);
                 //data.combination.Add(33);
                 //data.combination.Add(22);
                 //data.combination.Add(11);
                 data.combination.Add(0);
                 data.combination.Add(1);
-                data.combination.Add(2);
-                data.combination.Add(3);
-                data.combination.Add(4);
+                // data.combination.Add(2);
+                // data.combination.Add(3);
+                // data.combination.Add(4);
                 break;
             case 1:
-                data.prefab = "blizzard";
+                data.effectName = "blizzard";
+                data.positionUp = 2.9f;
+                data.positionRight = - 12.9f;
+                data.positionFront = 2.0f;
                 data.combination.Add(31);
                 data.combination.Add(32);
                 data.combination.Add(33);
@@ -51,7 +61,12 @@ public class SkillData
     }
     private SkillData()
     {
-        prefab = "";
+        effectName = "";
         combination = new List<int>();
+        rotationX = 0;
+        positionUp = 0;
+        positionRight = 0;
+        positionFront = 0;
+        aliveTime = 10;
     }
 }
