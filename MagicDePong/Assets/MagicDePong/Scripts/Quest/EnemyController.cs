@@ -19,7 +19,6 @@ public class EnemyController : MonoBehaviour
     /// </summary>
     const string flagNameIsDead = "IsDead";
 
-
     #endregion
 
     #region public property
@@ -34,6 +33,7 @@ public class EnemyController : MonoBehaviour
     /// </summary>
     public int MaxHP;
     public HPGauge hpGauge;
+
     /// <summary>
     /// 敵ID。
     /// </summary>
@@ -52,20 +52,25 @@ public class EnemyController : MonoBehaviour
     public void Appear()
     {
         Debug.Log("Appear");
+
+        // スプライトの設定
+        var sp = Resources.Load<Sprite>("Sprites/Quest/Enemy/" + GetSpriteName(ID));
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        sr.sprite = sp;
     }
 
     /// <summary>
     /// 被ダメージ処理。
     /// </summary>
     /// <param name="point">被ダメージポイント。</param>
-    public void OnDamaged(int point)
+    /// <param name="delay">アニメーション遅延秒数</param>
+    public void OnDamaged(int point, float delaySec = 0f)
     {
-        Debug.Log("Damaged");
-        Debug.Log("HP : " + (HP - point).ToString());
+        Debug.Log("OnDamaged");
 
         HP = HP - point;
-        hpGauge.SetPercent((float)HP/MaxHP);
-        animator.SetBool("IsDamaged", true);
+        hpGauge.SetPercent((float) HP / MaxHP);
+        animator.SetBool(flagNameIsDamaged, true);
     }
 
     /// <summary>
@@ -76,6 +81,8 @@ public class EnemyController : MonoBehaviour
         Debug.Log("Die");
 
         animator.SetBool(flagNameIsDead, true);
+
+        Invoke("DestorySelf", 3f);
     }
 
     /// <summary>
@@ -85,12 +92,10 @@ public class EnemyController : MonoBehaviour
     {
         Debug.Log("Idle");
 
-        animator.SetBool("IsDamaged", false);
+        animator.SetBool(flagNameIsDamaged, false);
 
-        //        if (HP <= 0)
-        //        {
-        //            Die();
-        //        }
+        if (HP <= 0)
+            Die();
     }
 
     #endregion
@@ -110,6 +115,16 @@ public class EnemyController : MonoBehaviour
         return string.Format("monster{0:00}", id);
     }
 
+    /// <summary>
+    /// クリーニング処理
+    /// </summary>
+    void DestorySelf()
+    {
+        Destroy(gameObject);
+
+        GameManager.Instance().GenerateEnemy();
+    }
+
     #endregion
 
     #region event
@@ -119,13 +134,8 @@ public class EnemyController : MonoBehaviour
         animator = GetComponent<Animator>();
 
         // フラグの初期化
-        animator.SetBool("IsDead", false);
-        animator.SetBool("IsDamaged", false);
-
-        var sp = Resources.Load<Sprite>("Sprites/Quest/Enemy/" + GetSpriteName(ID));
-        SpriteRenderer sr = GetComponent<SpriteRenderer>();
-        sr.sprite = sp;
-
+        animator.SetBool(flagNameIsDamaged, false);
+        animator.SetBool(flagNameIsDead, false);
     }
 
     void Start()

@@ -33,7 +33,8 @@ public class GameManager
             EffectManager.Instance.Show(data);
             Score.UseMagic();
 
-//            EnemyController.Instance.OnDamaged(10);
+            var enemyObject = GameObject.FindGameObjectWithTag(Tags.Enemy);
+            enemyObject.GetComponent<EnemyController>().OnDamaged(10);
         }
     }
 
@@ -46,5 +47,13 @@ public class GameManager
     public void OnTimeOver()
     {
         Application.LoadLevel(Scenes.Result);
+    }
+
+    /// <summary>
+    /// 次の敵を登場させる。
+    /// </summary>
+    public void GenerateEnemy()
+    {
+        EnemyGenerator.Instance.AppearNext();
     }
 }
