@@ -492,7 +492,7 @@ public class SkillData
                 break;
             case 71:
                 data.effectName = "icebreak01";
-                data.positionUp = 2f;
+                data.positionUp = 1f;
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Water;
@@ -559,6 +559,6 @@ public class SkillData
         skillIconWidth = 100;
         element = Element.Fire;
         rare = 1;
-        delayAttack = 0.2f;
+        delayAttack = 0.1f;
     }
 }
