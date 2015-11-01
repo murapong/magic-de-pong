@@ -312,7 +312,7 @@ public class SkillData
                 data.positionFront = 2.0f;
                 data.element = Element.Fire;
                 data.rare = 3;
-                delayAttack = 1f;
+                data.delayAttack = 1f;
                 data.combination.Add(1);
                 data.combination.Add(11);
                 data.combination.Add(21);
