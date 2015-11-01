@@ -13,6 +13,8 @@ public class SkillConverter {
         for (int i = 1; i < SkillData.DataCount; i++)
         {
             SkillData data = SkillData.GetData(i);
+            if (data == null || data.combination.Count == 0)
+                continue;
             if (CompareList(numberList, data.combination))
             {
                 return data;
@@ -22,6 +24,10 @@ public class SkillConverter {
     }
     private static bool CompareList(List<int> numberList, List<int> dataList)
     {
+        if (dataList.Count == 0)
+        {
+            return false;
+        }
         int i = 0;
         foreach(int number in numberList)
         {

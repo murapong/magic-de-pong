@@ -394,7 +394,7 @@ public class SkillData
                 data.combination.Add(13);
                 break;
             default:
-                Debug.LogError("skill data is not found: " + i);
+                Debug.LogWarning("skill data is not found: " + i);
                 break;
         }
         return data;
