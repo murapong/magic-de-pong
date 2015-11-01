@@ -19,6 +19,7 @@ public class DamageNumber : MonoBehaviour {
         Hashtable table = new Hashtable();
         float scale = GetScale(type);
         gameObject.transform.localScale = new Vector3(scale, scale, scale);
+        text.color = GetColor(type);
         // table.Add("x", scale);
         // table.Add("y", scale);
         table.Add("time", 1.0f);
@@ -32,7 +33,7 @@ public class DamageNumber : MonoBehaviour {
             case Damage.Type.Strong:
                 return 1.5f;
             case Damage.Type.Weak:
-                return 0.3f;
+                return 0.6f;
             case Damage.Type.Normal:
                 return 1.0f;
         }
@@ -46,6 +47,19 @@ public class DamageNumber : MonoBehaviour {
     {
         text.gameObject.SetActive(isActive);
         textBg.gameObject.SetActive(isActive);
+    }
+    private Color GetColor(Damage.Type type)
+    {
+        switch(type)
+        {
+            case Damage.Type.Strong:
+                return Color.yellow;
+            case Damage.Type.Weak:
+                return Color.blue;
+            case Damage.Type.Normal:
+                return Color.black;
+        }
+        return Color.black;
     }
 	
 	void Update () {
