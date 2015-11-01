@@ -20,7 +20,7 @@ public class EnemyGenerator : MonoBehaviour
     #region private property
 
     [SerializeField]
-    GameObject enemyObject;
+    GameObject enemyObjectBase;
     [SerializeField]
     HPGauge hpGauge;
 
@@ -29,6 +29,7 @@ public class EnemyGenerator : MonoBehaviour
     /// </summary>
     int currentID = 0;
 
+    private EnemyController enemyObject;
     #endregion
 
     #region public method
@@ -40,25 +41,28 @@ public class EnemyGenerator : MonoBehaviour
     {
         // 次の敵へ
         currentID++;
-        var go = Instantiate(enemyObject) as GameObject;
-        var enemy = go.GetComponent<EnemyController>();
-        enemy.ID = currentID;
+        var go = Instantiate(enemyObjectBase) as GameObject;
+        enemyObject = go.GetComponent<EnemyController>();
+        enemyObject.ID = currentID;
         EnemyData data = EnemyData.Get(currentID - 1);
         if (data == null)
         {
             GameManager.Instance().OnAllKilled();
         }
-        enemy.HP = data.hp;
-        enemy.MaxHP = data.hp;
-        enemy.hpGauge = hpGauge;
-        enemy.hpGauge.SetPercent(1);
-        enemy.Appear();
+        enemyObject.HP = data.hp;
+        enemyObject.MaxHP = data.hp;
+        enemyObject.hpGauge = hpGauge;
+        enemyObject.hpGauge.SetPercent(1);
+        enemyObject.Appear();
 
         Debug.Log("Enemy was appeard.");
-        Debug.Log("ID : " + enemy.ID);
-        Debug.Log("HP : " + enemy.HP);
+        Debug.Log("ID : " + enemyObject.ID);
+        Debug.Log("HP : " + enemyObject.HP);
     }
-
+    public EnemyController GetCurrentEnemy()
+    {
+        return enemyObject;
+    }
     #endregion
 
     #region private method

@@ -504,6 +504,10 @@ Prefab:
       propertyPath: hpGauge
       value: 
       objectReference: {fileID: 1931074521}
+    - target: {fileID: 11446880, guid: e5664ec5b5ad6473bb431d5c23b5e3f5, type: 2}
+      propertyPath: enemyObjectBase
+      value: 
+      objectReference: {fileID: 100070, guid: 25ba5953f3e524e9ab8df6a297714d87, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e5664ec5b5ad6473bb431d5c23b5e3f5, type: 2}
   m_IsPrefabParent: 0
