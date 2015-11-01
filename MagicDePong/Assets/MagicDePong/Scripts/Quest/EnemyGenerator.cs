@@ -59,6 +59,7 @@ public class EnemyGenerator : MonoBehaviour
         enemyObject.Appear();
         enemyObject.data = data;
         enemyObject.damageNumber = damageNumber;        
+        enemyObject.hpGauge.SetElement(data.element);
 
         Debug.Log("Enemy was appeard.");
         Debug.Log("ID : " + enemyObject.ID);

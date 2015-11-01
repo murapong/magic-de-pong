@@ -66,5 +66,9 @@ public class InputButton : Button, ICanvasRaycastFilter, IPointerEnterHandler, I
         {
             image.color = new Color(image.color.r, image.color.g, image.color.b, 0);
         }
+        else
+        {
+            image.color = new Color(image.color.r, image.color.g, image.color.b, 0.4f);
+        }
     }
 }
