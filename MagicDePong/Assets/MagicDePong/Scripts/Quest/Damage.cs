@@ -3,16 +3,37 @@ using System.Collections;
 
 public class Damage
 {
-    public static int Get(int rare, SkillData.Element offender, SkillData.Element defender)
+    public enum Type {
+        Strong,
+        Weak,
+        Normal
+    }
+    public static Type GetType(SkillData.Element offender, SkillData.Element defender)
     {
-        float buf = 1.0f;
         if (IsStrong(offender, defender))
         {
-            buf = ConfigData.StringElementDamage;
+            return Type.Strong;
         }
         else if (IsWeak(offender, defender))
         {
-            buf = ConfigData.WeakElementDamage;
+            return Type.Weak;
+        }
+        return Type.Normal;
+    }
+    public static int Get(int rare, Type type)
+    {
+        float buf = 1.0f;
+        switch(type)
+        {
+            case Type.Strong:
+                buf = ConfigData.StrongElementDamage;
+                break;
+            case Type.Weak:
+                buf = ConfigData.WeakElementDamage;
+                break;
+            case Type.Normal:
+                buf = 1.0f;
+                break;
         }
         switch(rare)
         {

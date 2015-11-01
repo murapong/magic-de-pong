@@ -23,6 +23,8 @@ public class EnemyGenerator : MonoBehaviour
     GameObject enemyObjectBase;
     [SerializeField]
     HPGauge hpGauge;
+    [SerializeField]
+    DamageNumber damageNumber;
 
     /// <summary>
     /// 現在の敵ID。
@@ -56,6 +58,7 @@ public class EnemyGenerator : MonoBehaviour
         enemyObject.hpGauge.SetPercent(1);
         enemyObject.Appear();
         enemyObject.data = data;
+        enemyObject.damageNumber = damageNumber;        
 
         Debug.Log("Enemy was appeard.");
         Debug.Log("ID : " + enemyObject.ID);
