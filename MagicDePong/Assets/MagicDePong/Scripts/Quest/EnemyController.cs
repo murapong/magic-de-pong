@@ -87,7 +87,7 @@ public class EnemyController : MonoBehaviour
         animator.SetBool(flagNameIsDead, true);
         Score.KillEnemy();
 
-        Invoke("DestorySelf", 3f);
+        Invoke("DestorySelf", 0.5f);
     }
 
     /// <summary>
