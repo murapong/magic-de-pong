@@ -13,6 +13,11 @@ public class EffectManager : MonoBehaviour
 	public void Show(SkillData data)
 	{
        GameObject effect = (GameObject)Resources.Load("effect/prefab/" + data.effectName);
+       if (effect == null)
+       {
+            Debug.LogError("effect name is bad: " + data.effectName);
+            return;
+       }
        GameObject obj = Instantiate(effect, transform.position + new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
        obj.transform.transform.Rotate(data.rotationX, 0, 0);
        obj.transform.position = new Vector3(data.positionRight, data.positionUp, obj.transform.position.z - data.positionFront);
