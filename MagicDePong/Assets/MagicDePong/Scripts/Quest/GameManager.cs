@@ -31,7 +31,7 @@ public class GameManager
         {
             Debug.LogError("発動！" + data.effectName);
             EffectManager.Instance.Show(data);
-            Score.UseMagic();
+            Score.UseMagic(data.rare);
 
             var enemyObject = GameObject.FindGameObjectWithTag(Tags.Enemy);
             enemyObject.GetComponent<EnemyController>().OnDamaged(10);
