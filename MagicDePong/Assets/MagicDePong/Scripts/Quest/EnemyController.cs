@@ -30,6 +30,11 @@ public class EnemyController : MonoBehaviour
     public int HP;
 
     /// <summary>
+    /// 最大のHP。
+    /// </summary>
+    public int MaxHP;
+    public HPGauge hpGauge;
+    /// <summary>
     /// 敵ID。
     /// </summary>
     public int ID;
@@ -59,6 +64,7 @@ public class EnemyController : MonoBehaviour
         Debug.Log("HP : " + (HP - point).ToString());
 
         HP = HP - point;
+        hpGauge.SetPercent((float)HP/MaxHP);
         animator.SetBool("IsDamaged", true);
     }
 
