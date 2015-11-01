@@ -241,8 +241,8 @@ public class SkillData
                 break;
             case 21:
                 data.effectName = "thunder02";
-                data.positionUp = 3f;
-                data.positionRight = -10f;
+                data.positionUp = 0f;
+                data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Wind;
                 data.rare = 2;
@@ -254,8 +254,8 @@ public class SkillData
                 break;
             case 22:
                 data.effectName = "thunder02";
-                data.positionUp = 3f;
-                data.positionRight = -10f;
+                data.positionUp = 0f;
+                data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Wind;
                 data.rare = 2;
@@ -267,8 +267,8 @@ public class SkillData
                 break;
             case 23:
                 data.effectName = "thunder02";
-                data.positionUp = 3f;
-                data.positionRight = -10f;
+                data.positionUp = 0f;
+                data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Wind;
                 data.rare = 2;
@@ -280,8 +280,8 @@ public class SkillData
                 break;
             case 24:
                 data.effectName = "thunder02";
-                data.positionUp = 3f;
-                data.positionRight = -10f;
+                data.positionUp = 0f;
+                data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Wind;
                 data.rare = 2;
@@ -293,8 +293,8 @@ public class SkillData
                 break;
             case 25:
                 data.effectName = "thunder02";
-                data.positionUp = 3f;
-                data.positionRight = -10f;
+                data.positionUp = 0f;
+                data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Wind;
                 data.rare = 2;
@@ -373,7 +373,7 @@ public class SkillData
                 // data.combination.Add(4);
                 break;
             case 71:
-                data.effectName = "hit_fire";
+                data.effectName = "dmg_fire1";
                 data.positionUp = 3f;
                 data.positionRight = -10f;
                 data.positionFront = 2.0f;
@@ -384,7 +384,7 @@ public class SkillData
                 data.combination.Add(13);
                 break;
             case 81:
-                data.effectName = "hit_fire";
+                data.effectName = "dmg_fire1";
                 data.positionUp = 3f;
                 data.positionRight = -10f;
                 data.positionFront = 2.0f;
@@ -395,7 +395,7 @@ public class SkillData
                 data.combination.Add(13);
                 break;
             case 91:
-                data.effectName = "hit_fire";
+                data.effectName = "dmg_fire1";
                 data.positionUp = 3f;
                 data.positionRight = -10f;
                 data.positionFront = 2.0f;
