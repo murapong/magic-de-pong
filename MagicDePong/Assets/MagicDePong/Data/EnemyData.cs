@@ -10,22 +10,26 @@ public class EnemyData
     {
         switch(id)
         {
-            case 0:  return new EnemyData(  10, SkillData.Element.Fire);
-            case 1:  return new EnemyData(  10, SkillData.Element.Water);
-            case 2:  return new EnemyData(  10, SkillData.Element.Water);
-            case 3:  return new EnemyData(  10, SkillData.Element.Wind);
-            case 4:  return new EnemyData(  10, SkillData.Element.Fire);//???
-            case 5:  return new EnemyData(  10, SkillData.Element.Wind);
-            case 6:  return new EnemyData(  10, SkillData.Element.Wind);
-            case 7:  return new EnemyData(  10, SkillData.Element.Fire);//???
-            case 8:  return new EnemyData(  10, SkillData.Element.Fire);
-            case 9:  return new EnemyData(  10, SkillData.Element.Fire);//???
-            case 10: return new EnemyData(  10, SkillData.Element.Fire);//???
-            case 11: return new EnemyData(  10, SkillData.Element.Fire);//???
-            case 12: return new EnemyData(  10, SkillData.Element.Normal);//boss???
-            case 13: return new EnemyData(  10, SkillData.Element.Fire);
-            case 14: return new EnemyData(  10, SkillData.Element.Fire);
-            case 15: return new EnemyData(  10, SkillData.Element.Fire);
+            case 0:  return new EnemyData(  50, SkillData.Element.Fire);
+            case 1:  return new EnemyData(  100, SkillData.Element.Water);
+            case 2:  return new EnemyData(  100, SkillData.Element.Water);
+            case 3:  return new EnemyData(  150, SkillData.Element.Wind);
+            case 4:  return new EnemyData(  500, SkillData.Element.Fire);//???
+            case 5:  return new EnemyData(  150, SkillData.Element.Wind);
+            case 6:  return new EnemyData(  200, SkillData.Element.Wind);
+            case 7:  return new EnemyData(  200, SkillData.Element.Fire);//???
+            case 8:  return new EnemyData(  250, SkillData.Element.Fire);
+            case 9:  return new EnemyData(  750, SkillData.Element.Fire);//???
+            case 10: return new EnemyData(  250, SkillData.Element.Fire);//???
+            case 11: return new EnemyData(  300, SkillData.Element.Fire);//???
+            case 12: return new EnemyData(  300, SkillData.Element.Normal);//boss???
+            case 13: return new EnemyData(  350, SkillData.Element.Fire);
+            case 14: return new EnemyData(  1000, SkillData.Element.Fire);
+            case 15: return new EnemyData(  350, SkillData.Element.Fire);
+            case 16: return new EnemyData(  400, SkillData.Element.Fire);//???
+            case 17: return new EnemyData(  400, SkillData.Element.Normal);//boss???
+            case 18: return new EnemyData(  450, SkillData.Element.Fire);
+            case 19: return new EnemyData(  2250, SkillData.Element.Fire);
         }
         return null;
     }
