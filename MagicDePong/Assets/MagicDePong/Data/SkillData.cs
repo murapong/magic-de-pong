@@ -305,21 +305,31 @@ public class SkillData
                 data.combination.Add(4);
                 break;
             case 31:
-                data.effectName = "hit_fire";
+                data.effectName = "meteor01";
                 data.positionUp = 3f;
                 data.positionRight = -10f;
                 data.positionFront = 2.0f;
+                data.element = Element.Fire;
+                data.rare = 3;
+                data.combination.Add(1);
+                data.combination.Add(11);
+                data.combination.Add(21);
                 data.combination.Add(31);
-                data.combination.Add(32);
+                data.combination.Add(41);
+                data.combination.Add(42);
+                data.combination.Add(43);
                 data.combination.Add(33);
                 data.combination.Add(23);
                 data.combination.Add(13);
+                data.combination.Add(3);
                 break;
             case 41:
                 data.effectName = "blizzard";
                 data.positionUp = 3f;
                 data.positionRight = -10f;
                 data.positionFront = 2.0f;
+                data.element = Element.Water;
+                data.rare = 3;
                 data.combination.Add(31);
                 data.combination.Add(32);
                 data.combination.Add(33);
@@ -330,10 +340,12 @@ public class SkillData
                 data.combination.Add(21);
                 break;
             case 51:
-                data.effectName = "hit_fire";
+                data.effectName = "whirlwind";
                 data.positionUp = 3f;
                 data.positionRight = -10f;
                 data.positionFront = 2.0f;
+                data.element = Element.Wind;
+                data.rare = 3;
                 data.combination.Add(31);
                 data.combination.Add(32);
                 data.combination.Add(33);
@@ -394,7 +406,7 @@ public class SkillData
                 data.combination.Add(13);
                 break;
             default:
-                Debug.LogError("skill data is not found: " + i);
+                Debug.LogWarning("skill data is not found: " + i);
                 break;
         }
         return data;
