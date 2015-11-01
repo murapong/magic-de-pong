@@ -34,7 +34,7 @@ public class QuestSceneController : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
 
-        EnemyController.Instance.OnDamaged(1);
+//        EnemyController.Instance.OnDamaged(1);
     }
 
     #endregion
@@ -43,8 +43,8 @@ public class QuestSceneController : MonoBehaviour
 
     void Start()
     {
-        EnemyController.Instance.Appear(1);
-//
+        EnemyGenerator.Instance.AppearNext();
+
 //        StartCoroutine(WaitAndDamaged());
     }
 

@@ -9,11 +9,30 @@ public class EnemyController : MonoBehaviour
 
     #region const
 
+    /// <summary>
+    /// ダメージフラグ名。
+    /// </summary>
+    const string flagNameIsDamaged = "IsDamaged";
+
+    /// <summary>
+    /// 死亡フラグ名。
+    /// </summary>
+    const string flagNameIsDead = "IsDead";
+
+
     #endregion
 
     #region public property
 
-    public static EnemyController Instance;
+    /// <summary>
+    /// 現在のHP。
+    /// </summary>
+    public int HP;
+
+    /// <summary>
+    /// 敵ID。
+    /// </summary>
+    public int ID;
 
     #endregion
 
@@ -21,14 +40,14 @@ public class EnemyController : MonoBehaviour
 
     Animator animator;
 
-    /// <summary>
-    /// 敵ID
-    /// </summary>
-    int enemyID;
-
     #endregion
 
     #region public method
+
+    public void Appear()
+    {
+        Debug.Log("Appear");
+    }
 
     /// <summary>
     /// 被ダメージ処理。
@@ -36,20 +55,11 @@ public class EnemyController : MonoBehaviour
     /// <param name="point">被ダメージポイント。</param>
     public void OnDamaged(int point)
     {
-        animator.Play("Damaged");
-    }
+        Debug.Log("Damaged");
+        Debug.Log("HP : " + (HP - point).ToString());
 
-    /// <summary>
-    /// 出現時処理。
-    /// </summary>
-    public void Appear(int id)
-    {
-        if (id <= 0)
-            return;
-        
-        var sp = Resources.Load<Sprite>("Sprites/Quest/Enemy/" + GetSpriteName(id));
-        SpriteRenderer sr = GetComponent<SpriteRenderer>();
-        sr.sprite = sp;
+        HP = HP - point;
+        animator.SetBool("IsDamaged", true);
     }
 
     /// <summary>
@@ -57,7 +67,24 @@ public class EnemyController : MonoBehaviour
     /// </summary>
     public void Die()
     {
-        animator.Play("Die");
+        Debug.Log("Die");
+
+        animator.SetBool(flagNameIsDead, true);
+    }
+
+    /// <summary>
+    /// アイドル時処理。
+    /// </summary>
+    public void Idle()
+    {
+        Debug.Log("Idle");
+
+        animator.SetBool("IsDamaged", false);
+
+        //        if (HP <= 0)
+        //        {
+        //            Die();
+        //        }
     }
 
     #endregion
@@ -73,7 +100,7 @@ public class EnemyController : MonoBehaviour
     {
         if (id <= 0)
             id = 1;
-        
+
         return string.Format("monster{0:00}", id);
     }
 
@@ -83,11 +110,16 @@ public class EnemyController : MonoBehaviour
 
     void Awake()
     {
-        Instance = this;
-
-        enemyID = 1;
-
         animator = GetComponent<Animator>();
+
+        // フラグの初期化
+        animator.SetBool("IsDead", false);
+        animator.SetBool("IsDamaged", false);
+
+        var sp = Resources.Load<Sprite>("Sprites/Quest/Enemy/" + GetSpriteName(ID));
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        sr.sprite = sp;
+
     }
 
     void Start()
@@ -99,14 +131,6 @@ public class EnemyController : MonoBehaviour
     {
 
     }
-
-    #endregion
-
-    #region enum
-
-    #endregion
-
-    #region const
 
     #endregion
 }
