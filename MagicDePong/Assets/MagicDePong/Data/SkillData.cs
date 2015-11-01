@@ -10,7 +10,7 @@ public class SkillData
         Water,
         Wind,
     }
-    public static int DataCount = 91;
+    public static int DataCount = 82;
 
     public string effectName;
     public List<int> combination;
@@ -34,7 +34,7 @@ public class SkillData
         {
             case 0:
                 data.effectName = "hit_normal";
-                data.positionUp = 3f;
+                data.positionUp = 2f;
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Fire;
@@ -48,7 +48,7 @@ public class SkillData
                 break;
             case 1:
                 data.effectName = "dmg_fire1";
-                data.positionUp = 3f;
+                data.positionUp = 2f;
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Fire;
@@ -63,7 +63,7 @@ public class SkillData
             case 2:
                 data.effectName = "dmg_fire1";
                 data.rare = 2;
-                data.positionUp = 3f;
+                data.positionUp = 2f;
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Fire;
@@ -77,7 +77,7 @@ public class SkillData
                 break;
             case 3:
                 data.effectName = "dmg_fire1";
-                data.positionUp = 3f;
+                data.positionUp = 2f;
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Fire;
@@ -91,7 +91,7 @@ public class SkillData
                 break;
             case 4:
                 data.effectName = "dmg_fire1";
-                data.positionUp = 3f;
+                data.positionUp = 2f;
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Fire;
@@ -105,7 +105,7 @@ public class SkillData
                 break;
             case 5:
                 data.effectName = "dmg_fire1";
-                data.positionUp = 3f;
+                data.positionUp = 2f;
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Fire;
@@ -119,7 +119,7 @@ public class SkillData
                 break;
             case 6:
                 data.effectName = "dmg_fire1";
-                data.positionUp = 3f;
+                data.positionUp = 2f;
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Fire;
@@ -133,7 +133,7 @@ public class SkillData
                 break;
             case 7:
                 data.effectName = "dmg_fire1";
-                data.positionUp = 3f;
+                data.positionUp = 2f;
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Fire;
@@ -147,7 +147,7 @@ public class SkillData
                 break;
             case 8:
                 data.effectName = "dmg_fire1";
-                data.positionUp = 3f;
+                data.positionUp = 2f;
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Fire;
@@ -161,7 +161,7 @@ public class SkillData
                 break;
             case 9:
                 data.effectName = "dmg_fire1";
-                data.positionUp = 3f;
+                data.positionUp = 2f;
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Fire;
@@ -175,7 +175,7 @@ public class SkillData
                 break;
             case 10:
                 data.effectName = "dmg_fire1";
-                data.positionUp = 3f;
+                data.positionUp = 2f;
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Fire;
@@ -189,7 +189,7 @@ public class SkillData
                 break;
             case 11:
                 data.effectName = "dmg_ice1";
-                data.positionUp = 3f;
+                data.positionUp = 2f;
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Water;
@@ -202,7 +202,7 @@ public class SkillData
                 break;
             case 12:
                 data.effectName = "dmg_ice1";
-                data.positionUp = 3f;
+                data.positionUp = 2f;
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Water;
@@ -215,7 +215,7 @@ public class SkillData
                 break;
             case 13:
                 data.effectName = "dmg_ice1";
-                data.positionUp = 3f;
+                data.positionUp = 2f;
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Water;
@@ -228,7 +228,7 @@ public class SkillData
                 break;
             case 14:
                 data.effectName = "dmg_ice1";
-                data.positionUp = 3f;
+                data.positionUp = 2f;
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Water;
@@ -341,15 +341,130 @@ public class SkillData
                 break;
             case 51:
                 data.effectName = "whirlwind";
-                data.positionUp = 3f;
-                data.positionRight = -10f;
+                data.positionUp = 1.3f;
+                data.positionRight = -1f;
                 data.positionFront = 2.0f;
                 data.element = Element.Wind;
                 data.rare = 3;
-                data.combination.Add(31);
-                data.combination.Add(32);
+                data.combination.Add(42);
                 data.combination.Add(33);
-                data.combination.Add(23);
+                data.combination.Add(24);
+                data.combination.Add(13);
+                data.combination.Add(2);
+                data.combination.Add(11);
+                data.combination.Add(20);
+                data.combination.Add(31);
+                break;
+            case 52:
+                data.effectName = "whirlwind";
+                data.positionUp = 1.3f;
+                data.positionRight = -1f;
+                data.positionFront = 2.0f;
+                data.element = Element.Wind;
+                data.rare = 3;
+                data.combination.Add(24);
+                data.combination.Add(13);
+                data.combination.Add(2);
+                data.combination.Add(11);
+                data.combination.Add(20);
+                data.combination.Add(31);
+                data.combination.Add(42);
+                data.combination.Add(33);
+                break;
+            case 53:
+                data.effectName = "whirlwind";
+                data.positionUp = 1.3f;
+                data.positionRight = -1f;
+                data.positionFront = 2.0f;
+                data.element = Element.Wind;
+                data.rare = 3;
+                data.combination.Add(2);
+                data.combination.Add(11);
+                data.combination.Add(20);
+                data.combination.Add(31);
+                data.combination.Add(42);
+                data.combination.Add(33);
+                data.combination.Add(24);
+                data.combination.Add(13);
+                break;
+            case 54:
+                data.effectName = "whirlwind";
+                data.positionUp = 1.3f;
+                data.positionRight = -1f;
+                data.positionFront = 2.0f;
+                data.element = Element.Wind;
+                data.rare = 3;
+                data.combination.Add(20);
+                data.combination.Add(31);
+                data.combination.Add(42);
+                data.combination.Add(33);
+                data.combination.Add(24);
+                data.combination.Add(13);
+                data.combination.Add(2);
+                data.combination.Add(11);
+                break;
+            case 55:
+                data.effectName = "whirlwind";
+                data.positionUp = 1.3f;
+                data.positionRight = -1f;
+                data.positionFront = 2.0f;
+                data.element = Element.Wind;
+                data.rare = 3;
+                data.combination.Add(42);
+                data.combination.Add(31);
+                data.combination.Add(20);
+                data.combination.Add(11);
+                data.combination.Add(2);
+                data.combination.Add(13);
+                data.combination.Add(24);
+                data.combination.Add(33);
+                break;
+            case 56:
+                data.effectName = "whirlwind";
+                data.positionUp = 1.3f;
+                data.positionRight = -1f;
+                data.positionFront = 2.0f;
+                data.element = Element.Wind;
+                data.rare = 3;
+                data.combination.Add(20);
+                data.combination.Add(11);
+                data.combination.Add(2);
+                data.combination.Add(13);
+                data.combination.Add(24);
+                data.combination.Add(33);
+                data.combination.Add(42);
+                data.combination.Add(31);
+                break;
+            case 57:
+                data.effectName = "whirlwind";
+                data.positionUp = 1.3f;
+                data.positionRight = -1f;
+                data.positionFront = 2.0f;
+                data.element = Element.Wind;
+                data.rare = 3;
+                data.combination.Add(2);
+                data.combination.Add(13);
+                data.combination.Add(24);
+                data.combination.Add(33);
+                data.combination.Add(42);
+                data.combination.Add(31);
+                data.combination.Add(20);
+                data.combination.Add(11);
+                break;
+            case 58:
+                data.effectName = "whirlwind";
+                data.positionUp = 1.3f;
+                data.positionRight = -1f;
+                data.positionFront = 2.0f;
+                data.element = Element.Wind;
+                data.rare = 3;
+                data.combination.Add(24);
+                data.combination.Add(33);
+                data.combination.Add(42);
+                data.combination.Add(31);
+                data.combination.Add(20);
+                data.combination.Add(11);
+                data.combination.Add(2);
                 data.combination.Add(13);
                 break;
             case 61:
@@ -358,52 +473,70 @@ public class SkillData
                 data.positionUp = 2.9f;
                 data.skillIconWidth = 500;
                 data.skillIconHeight = 160;
-                // data.combination.Add(40);
-                // data.combination.Add(41);
-                // data.combination.Add(42);
-                // data.combination.Add(43);
-                // data.combination.Add(44);
-                //data.combination.Add(33);
-                //data.combination.Add(22);
-                //data.combination.Add(11);
+                data.element = Element.Fire;
+                data.rare = 4;
+                data.combination.Add(40);
+                data.combination.Add(41);
+                data.combination.Add(42);
+                data.combination.Add(43);
+                data.combination.Add(44);
+                data.combination.Add(33);
+                data.combination.Add(22);
+                data.combination.Add(11);
                 data.combination.Add(0);
                 data.combination.Add(1);
-                // data.combination.Add(2);
-                // data.combination.Add(3);
-                // data.combination.Add(4);
+                data.combination.Add(2);
+                data.combination.Add(3);
+                data.combination.Add(4);
                 break;
             case 71:
-                data.effectName = "dmg_fire1";
-                data.positionUp = 3f;
-                data.positionRight = -10f;
+                data.effectName = "icebreak01";
+                data.positionUp = 2f;
+                data.positionRight = 0f;
                 data.positionFront = 2.0f;
-                data.combination.Add(31);
-                data.combination.Add(32);
-                data.combination.Add(33);
-                data.combination.Add(23);
-                data.combination.Add(13);
+                data.element = Element.Water;
+                data.rare = 4;
+                data.combination.Add(40);
+                data.combination.Add(41);
+                data.combination.Add(42);
+                data.combination.Add(43);
+                data.combination.Add(44);
+                data.combination.Add(34);
+                data.combination.Add(24);
+                data.combination.Add(14);
+                data.combination.Add(4);
+                data.combination.Add(3);
+                data.combination.Add(2);
+                data.combination.Add(1);
+                data.combination.Add(0);
+                data.combination.Add(10);
+                data.combination.Add(20);
+                data.combination.Add(30);
                 break;
             case 81:
-                data.effectName = "dmg_fire1";
+                data.effectName = "thunderstorm";
                 data.positionUp = 3f;
                 data.positionRight = -10f;
                 data.positionFront = 2.0f;
-                data.combination.Add(31);
+                data.element = Element.Wind;
+                data.rare = 4;
+                data.combination.Add(40);
+                data.combination.Add(30);
+                data.combination.Add(20);
+                data.combination.Add(10);
+                data.combination.Add(0);
+                data.combination.Add(1);
+                data.combination.Add(2);
+                data.combination.Add(12);
+                data.combination.Add(22);
                 data.combination.Add(32);
-                data.combination.Add(33);
-                data.combination.Add(23);
-                data.combination.Add(13);
-                break;
-            case 91:
-                data.effectName = "dmg_fire1";
-                data.positionUp = 3f;
-                data.positionRight = -10f;
-                data.positionFront = 2.0f;
-                data.combination.Add(31);
-                data.combination.Add(32);
-                data.combination.Add(33);
-                data.combination.Add(23);
-                data.combination.Add(13);
+                data.combination.Add(42);
+                data.combination.Add(43);
+                data.combination.Add(44);
+                data.combination.Add(34);
+                data.combination.Add(24);
+                data.combination.Add(14);
+                data.combination.Add(4);
                 break;
             default:
                 Debug.LogWarning("skill data is not found: " + i);
