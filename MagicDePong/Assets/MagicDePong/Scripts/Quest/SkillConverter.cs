@@ -24,7 +24,11 @@ public class SkillConverter {
     }
     private static bool CompareList(List<int> numberList, List<int> dataList)
     {
-        if (dataList.Count == 0)
+        if (dataList.Count == 0 || numberList.Count == 0)
+        {
+            return false;
+        }
+        if (dataList[0] != numberList[0])
         {
             return false;
         }
@@ -36,7 +40,10 @@ public class SkillConverter {
                 i++;
                 if (i == dataList.Count - 1)
                 {
-                    return true;
+                    if (dataList[i] == numberList[numberList.Count - 1])
+                        return true;
+                    else
+                        return false;
                 }
             }
         }
