@@ -34,10 +34,10 @@ public class SoundManager : MonoBehaviour
     AudioClip audioClipAppearSE;
 
     /// <summary>
-    /// ゲームオーバーSE。
+    /// 敵死亡SE。
     /// </summary>
     [SerializeField]
-    AudioClip audioClipGameOverSE;
+    AudioClip audioClipDieSE;
 
     /// <summary>
     /// トップBGM
@@ -65,7 +65,7 @@ public class SoundManager : MonoBehaviour
 
     AudioSource audioSourceAppear;
 
-    AudioSource audioSourceGameOver;
+    AudioSource audioSourceDie;
 
     AudioSource audioSourceBGM;
 
@@ -92,11 +92,13 @@ public class SoundManager : MonoBehaviour
     }
 
     /// <summary>
-    /// ゲームオーバーSEを再生する。
+    /// 敵死亡SEを再生する。
     /// </summary>
-    public void PlayGameOverSE()
+    public void PlayDieSE()
     {
-        audioSourceGameOver.Play();
+        audioSourceDie.clip = audioClipDieSE;
+        audioSourceDie.loop = false;
+        audioSourceDie.Play();
     }
 
     /// <summary>
@@ -140,7 +142,7 @@ public class SoundManager : MonoBehaviour
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
-        
+
         Instance = this;
 
         InitSound();
@@ -159,9 +161,7 @@ public class SoundManager : MonoBehaviour
         audioSourceAppear.clip = audioClipAppearSE;
         audioSourceAppear.loop = false;
 
-        audioSourceGameOver = gameObject.AddComponent<AudioSource>();
-        audioSourceGameOver.clip = audioClipGameOverSE;
-        audioSourceGameOver.loop = false;
+        audioSourceDie = gameObject.AddComponent<AudioSource>();
 
         audioSourceBGM = gameObject.AddComponent<AudioSource>();
     }

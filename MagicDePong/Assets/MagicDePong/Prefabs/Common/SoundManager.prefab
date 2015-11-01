@@ -41,7 +41,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClipYesSE: {fileID: 8300000, guid: 631486e9e071e4c0bacfca6362131371, type: 3}
   audioClipAppearSE: {fileID: 0}
-  audioClipGameOverSE: {fileID: 0}
+  audioClipDieSE: {fileID: 8300000, guid: 61fde3a6c228d7748b38fb4f15b799a3, type: 3}
   audioClipTopBGM: {fileID: 8300000, guid: 03596fabe140b4d8fa0fc15badcb2e7d, type: 3}
   audioClipQuestBGM: {fileID: 8300000, guid: 89bfbf043dd5b463ea040074c7f797d9, type: 3}
   audioClipResultBGM: {fileID: 8300000, guid: 305cb1076a8d84ec3aa3da98a1922037, type: 3}

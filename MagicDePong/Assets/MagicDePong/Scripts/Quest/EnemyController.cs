@@ -73,12 +73,16 @@ public class EnemyController : MonoBehaviour
     public void OnAttacked(int point, float delaySec)
     {
         Debug.Log("OnDamaged");
-        StartCoroutine(WaitAndDamaged(point, delaySec));
 
+        StartCoroutine(WaitAndDamaged(point, delaySec));
     }
+
     IEnumerator WaitAndDamaged(int point, float delaySec)
     {
+        SoundManager.Instance.PlayDieSE();
+
         yield return new WaitForSeconds(delaySec);
+
         HP = HP - point;
         hpGauge.SetPercent((float) HP / MaxHP);
         animator.SetBool(flagNameIsDamaged, true);
