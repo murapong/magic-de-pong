@@ -14,9 +14,17 @@ public class GameManager
     }
 
     private static GameManager instance;
+    private EnemyGenerator enemyGenerator;
 
     private GameManager()
     {
+        GameObject obj = GameObject.Find("EnemyGenerator");
+        if (obj == null)
+        {
+            Debug.LogError("null");
+            return;
+        }
+        enemyGenerator = obj.GetComponent<EnemyGenerator>();
     }
 
     public void OnInputEnd(List<int> numberList)
@@ -33,8 +41,13 @@ public class GameManager
             EffectManager.Instance.Show(data);
             Score.UseMagic(data.rare);
 
-            var enemyObject = GameObject.FindGameObjectWithTag(Tags.Enemy);
-            enemyObject.GetComponent<EnemyController>().OnDamaged(10);
+            EnemyController enemyObject = enemyGenerator.GetCurrentEnemy();
+            if (enemyObject == null)
+            {
+                Debug.LogError("attack is failed");
+                return;
+            }
+            enemyObject.OnDamaged(10);
         }
     }
 
