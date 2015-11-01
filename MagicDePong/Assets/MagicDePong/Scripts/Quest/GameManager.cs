@@ -48,6 +48,10 @@ public class GameManager
     {
         Application.LoadLevel(Scenes.Result);
     }
+    public void OnAllKilled()
+    {
+        Application.LoadLevel(Scenes.Result);
+    }
 
     /// <summary>
     /// 次の敵を登場させる。

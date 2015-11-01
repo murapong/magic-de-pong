@@ -4,8 +4,8 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class InputButton : Button, ICanvasRaycastFilter, IPointerEnterHandler, IDragHandler{
-    public const int SIZE_RADIUS = 80;
-    public const int SIZE_GAP = 20;//画像自体のサイズと円の部分との隙間
+    public const int SIZE_RADIUS = 82;
+    public const int SIZE_GAP = 22;//画像自体のサイズと円の部分との隙間
 
 
     private RectTransform rectTransform;
