@@ -33,7 +33,7 @@ public class DamageNumber : MonoBehaviour {
             case Damage.Type.Strong:
                 return 1.5f;
             case Damage.Type.Weak:
-                return 0.3f;
+                return 0.6f;
             case Damage.Type.Normal:
                 return 1.0f;
         }
