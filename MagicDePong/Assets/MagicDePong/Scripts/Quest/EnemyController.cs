@@ -97,6 +97,9 @@ public class EnemyController : MonoBehaviour
     {
         Debug.Log("Idle");
 
+        if (animator.GetBool(flagNameIsDead) == true)
+            return;
+
         animator.SetBool(flagNameIsDamaged, false);
 
         if (HP <= 0)
