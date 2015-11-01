@@ -46,8 +46,6 @@ public class TopSceneController : MonoBehaviour
     void Start()
     {
         SoundManager.Instance.PlayTopBGM();
-
-        Score.Initialize();
     }
 
     void Update()

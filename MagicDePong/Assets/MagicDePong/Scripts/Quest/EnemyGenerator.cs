@@ -48,12 +48,14 @@ public class EnemyGenerator : MonoBehaviour
         if (data == null)
         {
             GameManager.Instance().OnAllKilled();
+            return;
         }
         enemyObject.HP = data.hp;
         enemyObject.MaxHP = data.hp;
         enemyObject.hpGauge = hpGauge;
         enemyObject.hpGauge.SetPercent(1);
         enemyObject.Appear();
+        enemyObject.data = data;
 
         Debug.Log("Enemy was appeard.");
         Debug.Log("ID : " + enemyObject.ID);
@@ -74,6 +76,10 @@ public class EnemyGenerator : MonoBehaviour
     void Awake()
     {
         Instance = this;
+    }
+    public void Initialize()
+    {
+        currentID = 0;
     }
 
     #endregion
