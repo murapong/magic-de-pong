@@ -48,6 +48,8 @@ public class EnemyGenerator : MonoBehaviour
 
     [SerializeField]
     GameObject enemyObject;
+    [SerializeField]
+    HPGauge hpGauge;
 
     /// <summary>
     /// 現在の敵ID。
@@ -69,6 +71,9 @@ public class EnemyGenerator : MonoBehaviour
         var enemy = go.GetComponent<EnemyController>();
         enemy.ID = currentID;
         enemy.HP = HPs[currentID - 1];
+        enemy.MaxHP = HPs[currentID - 1];
+        enemy.hpGauge = hpGauge;
+        enemy.hpGauge.SetPercent(1);
         enemy.Appear();
 
         Debug.Log("Enemy was appeard.");
