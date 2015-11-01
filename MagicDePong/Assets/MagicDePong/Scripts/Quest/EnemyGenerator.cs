@@ -65,13 +65,15 @@ public class EnemyGenerator : MonoBehaviour
     {
         // 次の敵へ
         currentID++;
-        Debug.Log("Current ID is " + currentID);
-
         var go = Instantiate(enemyObject) as GameObject;
         var enemy = go.GetComponent<EnemyController>();
         enemy.ID = currentID;
         enemy.HP = HPs[currentID - 1];
         enemy.Appear();
+
+        Debug.Log("Enemy was appeard.");
+        Debug.Log("ID : " + enemy.ID);
+        Debug.Log("HP : " + enemy.HP);
     }
 
     #endregion
