@@ -70,7 +70,7 @@ public class GameManager
             Damage.Type type = Damage.GetType(data.element, enemyObject.data.element);
             enemyObject.OnAttacked(Damage.Get(data.rare, type), type, data.delayAttack);
             state = State.Attack;
-            stateTimer = 1.0f;
+            stateTimer = 0.7f;
         }
     }
     public void Update(float deltaTime)
