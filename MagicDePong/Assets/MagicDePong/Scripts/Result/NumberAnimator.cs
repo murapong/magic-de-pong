@@ -9,13 +9,10 @@ public class NumberAnimator : MonoBehaviour {
     private int scoreTo;
     private bool shouldStartAnimation;
 
-    public void StartAnimation()
-    {
-        shouldStartAnimation = true;
-    }
-    public void SetNumber(int number)
+    public void StartAnimation(int number)
     {
         scoreTo = number;
+        shouldStartAnimation = true;
     }
 
     void Start ()
@@ -40,7 +37,18 @@ public class NumberAnimator : MonoBehaviour {
         frame++;
         if (frame % 1 == 0)
         {
-            scoreNow++;
+            if (scoreTo - scoreNow >= 130)
+            {
+                scoreNow += 87;
+            }
+            else if (scoreTo - scoreNow >= 30)
+            {
+                scoreNow += 10;
+            }
+            else
+            {
+                scoreNow++;
+            }
             UpdateNumber();
         }
     }

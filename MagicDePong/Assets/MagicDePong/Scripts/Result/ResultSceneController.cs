@@ -17,7 +17,15 @@ public class ResultSceneController : MonoBehaviour {
 
     #region private property
     [SerializeField]
+    private NumberAnimator timeNumber;
+    [SerializeField]
     private NumberAnimator killNumber;
+    [SerializeField]
+    private NumberAnimator star2Number;
+    [SerializeField]
+    private NumberAnimator star3Number;
+    [SerializeField]
+    private NumberAnimator star4Number;
     [SerializeField]
     private NumberAnimator scoreAnimator;
     [SerializeField]
@@ -42,7 +50,7 @@ public class ResultSceneController : MonoBehaviour {
     void Start ()
     {
         int score = 1000;
-        highScore.text = score.ToString();
+        // highScore.text = score.ToString();
         frame = 0;
     }
 
@@ -51,11 +59,27 @@ public class ResultSceneController : MonoBehaviour {
         frame++;
         if (frame == 16)
         {
-            killNumber.StartAnimation();
+            timeNumber.StartAnimation(Score.GetTime());
+        }
+        if (frame == 32)
+        {
+            killNumber.StartAnimation(Score.GetKill());
+        }
+        if (frame == 48)
+        {
+            star2Number.StartAnimation(Score.GetRank2());
+        }
+        if (frame == 64)
+        {
+            star3Number.StartAnimation(Score.GetRank3());
         }
         if (frame == 80)
         {
-            scoreAnimator.StartAnimation();
+            star4Number.StartAnimation(Score.GetRank4());
+        }
+        if (frame == 100)
+        {
+            scoreAnimator.StartAnimation(Score.GetTotalScore());
         }
 
     }
