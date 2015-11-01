@@ -14,6 +14,7 @@ public class SkillData
     public float positionRight;
     public float positionFront;
     public float aliveTime;//何秒表示するか
+    public int skillIconId;
     public int skillIconWidth;//スキル名画像の横の長さ
     public int skillIconHeight;//スキル名画像の縦の長さ
 
@@ -72,6 +73,7 @@ public class SkillData
         positionRight = 0;
         positionFront = 0;
         aliveTime = 10;
+        skillIconId = 0;
         skillIconWidth = 100;
         skillIconWidth = 100;
     }

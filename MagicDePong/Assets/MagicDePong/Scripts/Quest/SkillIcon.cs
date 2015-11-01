@@ -17,6 +17,7 @@ public class SkillIcon : MonoBehaviour {
         GetComponent<RectTransform>().sizeDelta = new Vector2(width, height);
         image.enabled = true;
         transform.position = startPosition;
+        image.sprite = Resources.Load("Quest/skills/" + skillId.ToString(), typeof(Sprite)) as Sprite;
         time = 0.8f;
     }	
 	void Update () {
