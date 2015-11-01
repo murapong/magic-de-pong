@@ -15,7 +15,7 @@ public class EffectManager : MonoBehaviour
        obj.transform.transform.Rotate(data.rotationX, 0, 0);
        obj.transform.position = new Vector3(data.positionRight, data.positionUp, obj.transform.position.z - data.positionFront);
 	   obj.transform.SetParent(transform);
-	   obj.AddComponent<Effect>().SetAliveTime(2.2f);
+	   obj.AddComponent<Effect>().SetAliveTime(data.aliveTime);
 	}
 	
 	// Update is called once per frame
