@@ -14,6 +14,8 @@ public class SkillData
     public float positionRight;
     public float positionFront;
     public float aliveTime;//何秒表示するか
+    public int skillIconWidth;//スキル名画像の横の長さ
+    public int skillIconHeight;//スキル名画像の縦の長さ
 
     public static SkillData GetData(int i)
     {
@@ -25,6 +27,8 @@ public class SkillData
                 data.effectName = "fire01";
                 data.rotationX = 45;
                 data.positionUp = 2.9f;
+                data.skillIconWidth = 500;
+                data.skillIconHeight = 160;
                 // data.combination.Add(40);
                 // data.combination.Add(41);
                 // data.combination.Add(42);
@@ -68,5 +72,7 @@ public class SkillData
         positionRight = 0;
         positionFront = 0;
         aliveTime = 10;
+        skillIconWidth = 100;
+        skillIconWidth = 100;
     }
 }
