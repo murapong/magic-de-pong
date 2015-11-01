@@ -145,15 +145,15 @@ public class SkillData
                 data.aliveTime = 10;
                 break;
             case 11:
-                data.effectName = "hit_ice";
+                data.effectName = "dmg_ice1";
                 data.positionUp = 3f;
-                data.positionRight = -10f;
+                data.positionRight = 0f;
                 data.positionFront = 2.0f;
+                data.combination.Add(40);
                 data.combination.Add(31);
-                data.combination.Add(32);
-                data.combination.Add(33);
-                data.combination.Add(23);
+                data.combination.Add(22);
                 data.combination.Add(13);
+                data.combination.Add(4);
                 break;
             case 21:
                 data.effectName = "hit_fire";
