@@ -32,13 +32,27 @@ public class SkillData
         data.id = i;
         switch(i)
         {
+            case 0:
+                data.effectName = "hit_normal";
+                data.positionUp = 3f;
+                data.positionRight = 0f;
+                data.positionFront = 2.0f;
+                data.element = Element.Fire;
+                data.rare = 1;
+                data.combination.Add(40);
+                data.combination.Add(41);
+                data.combination.Add(42);
+                data.combination.Add(43);
+                data.combination.Add(44);
+                data.aliveTime = 10;
+                break;
             case 1:
                 data.effectName = "dmg_fire1";
                 data.positionUp = 3f;
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Fire;
-                data.rare = 1;
+                data.rare = 2;
                 data.combination.Add(40);
                 data.combination.Add(41);
                 data.combination.Add(42);
@@ -53,7 +67,7 @@ public class SkillData
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Fire;
-                data.rare = 1;
+                data.rare = 2;
                 data.combination.Add(30);
                 data.combination.Add(31);
                 data.combination.Add(32);
@@ -67,7 +81,7 @@ public class SkillData
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Fire;
-                data.rare = 1;
+                data.rare = 2;
                 data.combination.Add(20);
                 data.combination.Add(21);
                 data.combination.Add(22);
@@ -81,7 +95,7 @@ public class SkillData
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Fire;
-                data.rare = 1;
+                data.rare = 2;
                 data.combination.Add(10);
                 data.combination.Add(11);
                 data.combination.Add(12);
@@ -95,7 +109,7 @@ public class SkillData
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Fire;
-                data.rare = 1;
+                data.rare = 2;
                 data.combination.Add(0);
                 data.combination.Add(1);
                 data.combination.Add(2);
@@ -109,7 +123,7 @@ public class SkillData
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Fire;
-                data.rare = 1;
+                data.rare = 2;
                 data.combination.Add(4);
                 data.combination.Add(3);
                 data.combination.Add(2);
@@ -123,7 +137,7 @@ public class SkillData
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Fire;
-                data.rare = 1;
+                data.rare = 2;
                 data.combination.Add(14);
                 data.combination.Add(13);
                 data.combination.Add(12);
@@ -137,7 +151,7 @@ public class SkillData
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Fire;
-                data.rare = 1;
+                data.rare = 2;
                 data.combination.Add(24);
                 data.combination.Add(23);
                 data.combination.Add(22);
@@ -151,7 +165,7 @@ public class SkillData
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Fire;
-                data.rare = 1;
+                data.rare = 2;
                 data.combination.Add(34);
                 data.combination.Add(33);
                 data.combination.Add(32);
@@ -165,7 +179,7 @@ public class SkillData
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Fire;
-                data.rare = 1;
+                data.rare = 2;
                 data.combination.Add(44);
                 data.combination.Add(43);
                 data.combination.Add(42);
@@ -179,7 +193,7 @@ public class SkillData
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Water;
-                data.rare = 1;
+                data.rare = 2;
                 data.combination.Add(40);
                 data.combination.Add(31);
                 data.combination.Add(22);
@@ -192,7 +206,7 @@ public class SkillData
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Water;
-                data.rare = 1;
+                data.rare = 2;
                 data.combination.Add(44);
                 data.combination.Add(33);
                 data.combination.Add(22);
@@ -205,7 +219,7 @@ public class SkillData
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Water;
-                data.rare = 1;
+                data.rare = 2;
                 data.combination.Add(0);
                 data.combination.Add(11);
                 data.combination.Add(22);
@@ -218,7 +232,7 @@ public class SkillData
                 data.positionRight = 0f;
                 data.positionFront = 2.0f;
                 data.element = Element.Water;
-                data.rare = 1;
+                data.rare = 2;
                 data.combination.Add(4);
                 data.combination.Add(13);
                 data.combination.Add(22);
@@ -230,11 +244,65 @@ public class SkillData
                 data.positionUp = 3f;
                 data.positionRight = -10f;
                 data.positionFront = 2.0f;
+                data.element = Element.Wind;
+                data.rare = 2;
+                data.combination.Add(40);
+                data.combination.Add(30);
+                data.combination.Add(20);
+                data.combination.Add(10);
+                data.combination.Add(0);
+                break;
+            case 22:
+                data.effectName = "thunder02";
+                data.positionUp = 3f;
+                data.positionRight = -10f;
+                data.positionFront = 2.0f;
+                data.element = Element.Wind;
+                data.rare = 2;
+                data.combination.Add(41);
                 data.combination.Add(31);
+                data.combination.Add(21);
+                data.combination.Add(11);
+                data.combination.Add(1);
+                break;
+            case 23:
+                data.effectName = "thunder02";
+                data.positionUp = 3f;
+                data.positionRight = -10f;
+                data.positionFront = 2.0f;
+                data.element = Element.Wind;
+                data.rare = 2;
+                data.combination.Add(42);
                 data.combination.Add(32);
+                data.combination.Add(22);
+                data.combination.Add(12);
+                data.combination.Add(2);
+                break;
+            case 24:
+                data.effectName = "thunder02";
+                data.positionUp = 3f;
+                data.positionRight = -10f;
+                data.positionFront = 2.0f;
+                data.element = Element.Wind;
+                data.rare = 2;
+                data.combination.Add(43);
                 data.combination.Add(33);
                 data.combination.Add(23);
                 data.combination.Add(13);
+                data.combination.Add(3);
+                break;
+            case 25:
+                data.effectName = "thunder02";
+                data.positionUp = 3f;
+                data.positionRight = -10f;
+                data.positionFront = 2.0f;
+                data.element = Element.Wind;
+                data.rare = 2;
+                data.combination.Add(44);
+                data.combination.Add(34);
+                data.combination.Add(24);
+                data.combination.Add(14);
+                data.combination.Add(4);
                 break;
             case 31:
                 data.effectName = "hit_fire";
