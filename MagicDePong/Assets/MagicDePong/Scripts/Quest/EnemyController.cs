@@ -80,8 +80,6 @@ public class EnemyController : MonoBehaviour
 
     IEnumerator WaitAndDamaged(int point, Damage.Type type, float delaySec)
     {
-        SoundManager.Instance.PlayDieSE();
-
         yield return new WaitForSeconds(delaySec);
 
         HP = HP - point;
@@ -96,6 +94,8 @@ public class EnemyController : MonoBehaviour
     public void Die()
     {
         Debug.Log("Die");
+
+        SoundManager.Instance.PlayDieSE();
 
         animator.SetBool(flagNameIsDead, true);
         Score.KillEnemy();
