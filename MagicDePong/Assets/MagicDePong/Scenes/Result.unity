@@ -182,7 +182,7 @@ RectTransform:
   m_Children:
   - {fileID: 1164199683}
   m_Father: {fileID: 508110421}
-  m_RootOrder: 1
+  m_RootOrder: 7
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 0, y: -551}
@@ -529,7 +529,7 @@ RectTransform:
   - {fileID: 767392332}
   - {fileID: 109492271}
   m_Father: {fileID: 508110421}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 79, y: -20}
@@ -565,13 +565,13 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 22123785}
-  - {fileID: 73142231}
   - {fileID: 1657268607}
   - {fileID: 945089108}
   - {fileID: 864256026}
   - {fileID: 342794689}
   - {fileID: 1121841783}
   - {fileID: 1662595267}
+  - {fileID: 73142231}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
@@ -993,7 +993,7 @@ RectTransform:
   - {fileID: 849611742}
   - {fileID: 1446060256}
   m_Father: {fileID: 508110421}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 79, y: 140}
@@ -1027,7 +1027,7 @@ RectTransform:
   - {fileID: 1076882755}
   - {fileID: 533135806}
   m_Father: {fileID: 508110421}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 79, y: 300}
@@ -1291,7 +1291,7 @@ RectTransform:
   - {fileID: 209272535}
   - {fileID: 998772729}
   m_Father: {fileID: 508110421}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 79, y: -180}
@@ -1637,7 +1637,7 @@ RectTransform:
   - {fileID: 1133839952}
   - {fileID: 1551892550}
   m_Father: {fileID: 508110421}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 79, y: 460}
@@ -1671,7 +1671,7 @@ RectTransform:
   - {fileID: 228337593}
   - {fileID: 1672884901}
   m_Father: {fileID: 508110421}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 79, y: -395}
