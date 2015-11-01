@@ -23,7 +23,7 @@ public class EffectManager : MonoBehaviour
        obj.transform.position = new Vector3(data.positionRight, data.positionUp, obj.transform.position.z - data.positionFront);
 	   obj.transform.SetParent(transform);
 	   obj.AddComponent<Effect>().SetAliveTime(data.aliveTime);
-       icon.Show(data.id, data.skillIconWidth, data.skillIconHeight);
+       icon.Show(data.skillIconId, data.skillIconWidth, data.skillIconHeight);
 	}
 	
 	// Update is called once per frame
