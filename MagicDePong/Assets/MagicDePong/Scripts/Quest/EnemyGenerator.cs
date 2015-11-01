@@ -9,33 +9,6 @@ public class EnemyGenerator : MonoBehaviour
     #endregion
 
     #region const
-
-    /// <summary>
-    /// 敵HP格納用のリスト
-    /// </summary>
-    static readonly List<int> HPs = new List<int>() {
-        5,
-        10,
-        15,
-        20,
-        25,
-        30,
-        35,
-        40,
-        45,
-        50,
-        55,
-        60,
-        65,
-        70,
-        75,
-        80,
-        85,
-        90,
-        95,
-        100,
-    };
-
     #endregion
 
     #region public property
@@ -70,8 +43,13 @@ public class EnemyGenerator : MonoBehaviour
         var go = Instantiate(enemyObject) as GameObject;
         var enemy = go.GetComponent<EnemyController>();
         enemy.ID = currentID;
-        enemy.HP = HPs[currentID - 1];
-        enemy.MaxHP = HPs[currentID - 1];
+        EnemyData data = EnemyData.Get(currentID - 1);
+        if (data == null)
+        {
+            GameManager.Instance().OnAllKilled();
+        }
+        enemy.HP = data.hp;
+        enemy.MaxHP = data.hp;
         enemy.hpGauge = hpGauge;
         enemy.hpGauge.SetPercent(1);
         enemy.Appear();
