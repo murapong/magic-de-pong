@@ -1,0 +1,12 @@
+{
+	"folders":
+	[
+		{
+			"path": "MagicDePong/",
+			"file_exclude_patterns": ["*.meta", "*.cs.meta", "*.sln", "*.unityproj"],
+			"folder_exclude_patterns": ["Library", "Temp"],
+			"file_include_patterns": ["*.cs"]
+		}
+	],
+    "solution_file" : "MagicDePong/MagicDePong.sln"
+}

@@ -1,0 +1,848 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"NUM",
+				"NumberOfChannelsSE	int"
+			],
+			[
+				"mSoun",
+				"mSoundsSE	List<Sound>"
+			],
+			[
+				"Num",
+				"NumberOfOverlapSE	int"
+			],
+			[
+				"audio",
+				"audioClip	AudioClip"
+			],
+			[
+				"IE",
+				"IEnumerator<	IEnumerator<"
+			],
+			[
+				"mSou",
+				"mSoundsSE	List<Sound>"
+			],
+			[
+				"fi",
+				"fieldObjectId	int"
+			],
+			[
+				"Ins",
+				"GetInstance()	NoranecoSoundEngine"
+			],
+			[
+				"GetCom",
+				"GetComponent<T>()	T"
+			],
+			[
+				"Seri",
+				"SerializeField	SerializeField"
+			],
+			[
+				"Vecto",
+				"Vector3	Vector3"
+			],
+			[
+				"po",
+				"positionCenter	Vector3"
+			],
+			[
+				"Is",
+				"SharedInstance"
+			],
+			[
+				"app",
+				"app_path"
+			],
+			[
+				"Log",
+				"log"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "remo",
+		"selected_items":
+		[
+			[
+				"remo",
+				"BracketHighlighter: Select Tag Name (closing and opening)"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"FindKey",
+				"FindKeyConflicts: All Conflicts"
+			],
+			[
+				"FindKe",
+				"FindKeyConflicts: All Conflicts"
+			],
+			[
+				"Package",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 51.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"print \"a\"",
+			"print",
+			" print 'Please restart Sublime Text to finish installation'",
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print 'Please restart Sublime Text to finish installation'"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/seiya.yoshimoto/Documents/unity/magic-de-pong/MagicDePong/Assets/MagicDePong/Scripts/Top/TopSceneController.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/UIModule/Generated/BattleHudsWidget.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/UIModule/Controllers/BattleController.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/FieldObject/Item/AutoCollectItem.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Plugin/NoranecoPlugin.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/UIModule/Widgets/BattleHudsWidget.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Dev/Editor/FieldEditor/Editor/FieldEditor.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/MapEngine/MapEngine.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/AssetBundle/Editor/AssetBundleUtility.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/AssetBundleManager/Editor/AssetBundleUtility.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Master/Editor/MasterExporter.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Master/Editor/MasterTool.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Plugin/BattleEngine.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/UIModule/Utility/BattleLauncher.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Master/Editor/Generated/ExcelExporter_NoranecoMapMaster.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Sound/NoranecoSoundEngine.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/Mesh/MeshCharacter.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Master/Scripts/MasterFieldObject.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/FieldObject/Item/Item.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/FieldObject/EffectMesh.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/FieldObject/Character/Soldier.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/FieldObject/Character/Character3D.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/FieldObject/Building/Building.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/NoranecoFTAnimatingMesh.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/Effect/SlowEffect.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/UIModule/Controllers/UserPanelController.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/FieldObject/Building/Artillery.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/Mesh/MeshFieldObject.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/System/FTMesh/FTAnimatingMesh.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/Mesh/MeshGameObject.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/System/FTMesh/FTMesh.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/MapAssetManager/MapAssetManagerMesh.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/Model/ModelBase.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Scenes/SceneChangeUtility.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/MapAssetManager/MapAssetManager.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/FieldObjectUI/FieldObjectUI.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Engine/NoranecoSoundEngine.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/FieldObjectUI/FlyText.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Dev/Editor/FieldEditor/Manager/GroundManager.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/Mesh/MeshItem.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Scenes/BattleScene.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/BattleManager.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Master/Scripts/MasterCharacter.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/Interface/ICharacter.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Master/Scripts/Sound.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Scenes/TitleScene.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Engine/Sound.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/UIModule/Controllers/TitleController.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/System/Debug.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Master/Scripts/Generated/Sound.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/StateMachines/Initialize/StateMachine/InitializeStateLoadMaster.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/StateMachines/Initialize/StateMachine/InitializeStateWaitMeta.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/StateMachines/Initialize/StateMachine/InitializeStateInitializeGamelib.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/StateMachines/Initialize/StateMachine/InitializeStateLogin.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/StateMachines/Initialize/StateMachine/InitializeInitState.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Dev/DebugSettingData.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/UIModule/Generated/TitleController.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/UIModule/Generated/TitleTitleWidget.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Assets3D/Effects/zzz_Others/Connector/Connector.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Master/Scripts/Generated/FieldObject.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Master/MasterManager.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/AssetBundle/Master/master_plugin.txt",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app.sublime-project",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/AssetBundle/AssetLoader.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/UIModule/Utility/UIUtility.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Master/Scripts/Generated/WorldCity.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Master/Scripts/MasterFieldObjectLevel.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/hiyoko/New Unity Project/Assets/UiController.js",
+		"/Users/seiya.yoshimoto/Documents/unity/hiyoko/New Unity Project/Assets/Cannon.js",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/UIModule/Parameter/ConquestCityInfoUIParameter.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Dev/MapEditor/MapObject.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Common/UIModule/Components/UIButton.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Common/StateMachines/MapInput/MapInput.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Dev/Editor/FieldEditor/Data/Stage/stage_conquest_hard_0002.json",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/System/NoranecoMain.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Dev/Editor/FieldEditor/Data/Stage/stage_conquest_hard_0002tmp.json",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Dev/Editor/FieldEditor/Data/Stage/1010test.json",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Dev/Editor/FieldEditor/Manager/SpawnPointManager.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Dev/Editor/FieldEditor/Manager/PartsManager.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Dev/Editor/FieldEditor/Manager/ManagerBase.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Dev/Editor/FieldEditor/Editor/PartsEditor/SpawnPointPartEditor.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Dev/Editor/FieldEditor/Editor/GameViewer.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Plugins/NoranecoPlugin.bundle/Contents/MacOS/NoranecoPlugin",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/UIModule/Controllers/HomeController.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Dev/Editor/FieldEditor/Data/Stage/tan.json",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Dev/Editor/FieldEditor/Data/Field/tan.json",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/UIModule/Generated/HomePortalWidget.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/UnityTestTools/IntegrationTestsFramework/TestRunner/Editor/Renderer/IntegrationTestRendererBase.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/GooglePlayGames/Platforms/Android/AndroidClient.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Engine/Communication/Commands/BattlePvpStart.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Plugin/BattleInfo.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/UIModule/Widgets/BattleTimeCounterWidget.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/UIModule/Generated/BattleTimeCounterWidget.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/Model/ItemModel.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/GameData/Player/Item.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/Model/BuildingModel.cs",
+		"/Users/seiya.yoshimoto/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assembly-CSharp-Editor.csproj",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/FieldObject/FieldObject.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/Interface/IBuilding.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Common/Engine/UIManager.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Scenes/HomeScene.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/BattleMap/BattleMapSegment.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/GameData/GameDataManager.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/BattleMap/BattleMap.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/StateMachines/Initialize/StateMachine/InitializeStateLoadPlayer.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/MapRootObject3D.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Map/FieldObject/Building.meta",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Dev/MapEditor/Segment.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Resources/MapEngine.meta",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Dev/MapEditor/PieceElement.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Dev/MapEditor/Utility.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Dev/MapEditor/Piece.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/GameData/Player/DeckCollection.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/UIModule/Widgets/ChangeEquipmentListWidget.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Master/Scripts/Generated/Weapon.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/UIModule/Controllers/ChangeEquipmentDeckController.cs",
+		"/Users/seiya.yoshimoto/Library/Logs/Unity/Editor.log",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/gmcs.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/UIModule/Widgets/UpgradeWeaponStatusComparisonWidget.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/UIModule/Widgets/WeaponDetailWindowWidget.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/GameData/Player/Weapon.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Master/Editor/Generated/ExcelExporter_NoranecoMaster.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Master/Scripts/Generated/MasterWeapon.cs",
+		"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets/Service/Noraneco/Dev/MapEditor/MapEditorMain.cs",
+		"/Users/seiya.yoshimoto/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/seiya.yoshimoto/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/seiya.yoshimoto/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/Default (OSX).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets, *.cs",
+			"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets, *.txt,-*.txt",
+			"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets, *.txt",
+			"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets && *.txt",
+			"*.txt",
+			"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets,*.txt",
+			"/Users/seiya.yoshimoto/Documents/unity/noraneco/app/UnityProject/Assets",
+			"<current file>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"UICharacterCache",
+			"UICharacterCache.Instance",
+			"Instance",
+			"UICharacterCache",
+			"MapObject",
+			"UpdateItemNum",
+			"OnItemFlyAnimationFinish\nOnItemFlyAnimationFinish",
+			"OnItemFlyAnimationFinish",
+			"OnAnimationDone",
+			"OnItemFlyAnimationFinish",
+			"battleHuds",
+			"BattleHudsWidget",
+			"partsType",
+			"PartsType",
+			"BuildInternal",
+			"IsSergeant",
+			"SergeantSoldier",
+			"NormalSoldier",
+			"kTypeBoss",
+			"MapObjectType::NormalSoldier",
+			"MapObjectType::Subboss",
+			"MapObjectType::Building",
+			"Building",
+			"BuildAssetBundlesInternal",
+			"Build\\(",
+			"Build",
+			"MasterExporter",
+			"Sound",
+			"ID_BGM_MAIN_THEME",
+			"ID_BGM_OPENING",
+			"FATAL ERROR",
+			"Fatal Error",
+			"LogError",
+			"LastCellNum",
+			"RowFieldName",
+			"CreateElement",
+			"ExportMaster",
+			"area ",
+			"area -",
+			"020;",
+			"020",
+			"ID_FENCE_LEFT",
+			"4031000",
+			"SetProjectileBuffer",
+			"SU_SetProjectileBuffer",
+			"MAX_PROJECTILES",
+			"projectileArray",
+			"MAX_PROJECTILES",
+			"SetProjectileBuffer",
+			"SU_SetProjectileBuffer",
+			"Evacuate",
+			"SU_Evacuate",
+			"SU_GetCurrentStatus",
+			"GetPassiveSkillRadius",
+			"SU_GetPassiveSkillRadius",
+			"SetProjectileBuffer",
+			"SU_SetProjectileBuffer",
+			"segmentInfoArray",
+			"GetSegmentInfo",
+			"segmentInfoArray",
+			"MAX_SEGMENT",
+			"SU_Init",
+			"StartBattle",
+			"Evacuate",
+			"SU_GetControlPadInternalRadius",
+			"GetDarkLordFieldObjectId",
+			"SU_GetDarkLordFieldObjectId",
+			"Evacuate",
+			"SU_Evacuate",
+			"NOR_GetResult",
+			"SU_Init",
+			"SU_InitNewJson",
+			"UpdatePlayerData",
+			"FRAME_SLOW",
+			"IsBattleEnd",
+			"RESULT_SHOW",
+			"FRAME_SLOW",
+			"UpdateHp",
+			"hpDif",
+			"FRAME_STOP",
+			"FRAME_SLOW",
+			"FRAME_STOP",
+			"GetOrthographicSizeBattle",
+			"FRAME_CAMERA_BACK",
+			"FRAME_SLOW",
+			"SLOW_MODE_FRAME",
+			"FRAME_STOP",
+			"SlowEffect",
+			"RESULT_SHOW",
+			"Update",
+			"I@date",
+			"Update",
+			"FRAME_STOP",
+			"OnGameEvent",
+			"onGameEvent",
+			"SlowEffect",
+			"hpDiff",
+			"HpDiffAt",
+			"ApplyDamage",
+			"Play",
+			"BIT_STRONG",
+			"60522002",
+			"areaId",
+			"areaId = obj.area",
+			"CacheInfo",
+			"areaId",
+			"areaId\nareaId",
+			"Setting\\(",
+			"Setting",
+			"SetMeshName",
+			"animationMeshName",
+			"areaToElementId",
+			"soldiers",
+			"areaNumber",
+			"CreateUseMeshCharacterInfo",
+			"meshCharacterInfos",
+			"PoolMeshCharacter",
+			"soldiers",
+			"ParseSoldiers",
+			"ParseSoldiers\n",
+			"CreateUseMeshCharacterInfo",
+			"GetAssetName\n",
+			"GetAssetName",
+			"CreateMeshData",
+			"PoolMesh",
+			"ParseSoldiers",
+			"soldiers",
+			"ID_DARK_SOLDIER_MAGE"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			"counter"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 112.0
+	},
+	"output.variable_get":
+	{
+		"height": 89.0
+	},
+	"pinned_build_system": "",
+	"project": "MagicDePong.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"homescene",
+				"Assets/Service/Noraneco/Scenes/HomeScene.cs"
+			],
+			[
+				"uicharactercache",
+				"Assets/Service/Noraneco/UIModule/Character/UICharacterCache.cs"
+			],
+			[
+				"battlescene",
+				"Assets/Service/Noraneco/Scenes/BattleScene.cs"
+			],
+			[
+				"plugin",
+				"Assets/Service/Noraneco/Plugin/NoranecoPlugin.cs"
+			],
+			[
+				"fieldedito",
+				"Assets/Service/Noraneco/Dev/Editor/FieldEditor/Editor/FieldEditor.cs"
+			],
+			[
+				"fielded",
+				"Assets/Service/Noraneco/Dev/Editor/FieldEditor/Editor/FieldEditor.cs"
+			],
+			[
+				"noranecoplugin",
+				"Assets/Service/Noraneco/Plugin/NoranecoPlugin.cs"
+			],
+			[
+				"assetbundleutility",
+				"Assets/AssetBundleManager/Editor/AssetBundleUtility.cs"
+			],
+			[
+				"noranecomap",
+				"Assets/Service/Noraneco/Master/Editor/Generated/ExcelExporter_NoranecoMapMaster.cs"
+			],
+			[
+				"battle",
+				"Assets/Service/Noraneco/UIModule/Utility/BattleLauncher.cs"
+			],
+			[
+				"masterexporter",
+				"Assets/Master/Editor/MasterExporter.cs"
+			],
+			[
+				"sounden",
+				"Assets/Service/Noraneco/Sound/NoranecoSoundEngine.cs"
+			],
+			[
+				"noranecopl",
+				"Assets/Service/Noraneco/Plugin/NoranecoPlugin.cs"
+			],
+			[
+				"meshcharacter",
+				"Assets/Service/Noraneco/Map/Mesh/MeshCharacter.cs"
+			],
+			[
+				"slow",
+				"Assets/Service/Noraneco/Map/Effect/SlowEffect.cs"
+			],
+			[
+				"fieldobjectui",
+				"Assets/Service/Noraneco/Map/FieldObjectUI/FieldObjectUI.cs"
+			],
+			[
+				"noranecosound",
+				"Assets/Service/Noraneco/Engine/NoranecoSoundEngine.cs"
+			],
+			[
+				"soundma",
+				"Assets/Service/Noraneco/Dev/Editor/FieldEditor/Manager/GroundManager.cs"
+			],
+			[
+				"mapaa",
+				"Assets/Service/Noraneco/Map/MapAssetManager/MapAssetManager.cs"
+			],
+			[
+				"battlela",
+				"Assets/Service/Noraneco/UIModule/Utility/BattleLauncher.cs"
+			],
+			[
+				"battlesc",
+				"Assets/Service/Noraneco/Scenes/BattleScene.cs"
+			],
+			[
+				"battlem",
+				"Assets/Service/Noraneco/Map/BattleManager.cs"
+			],
+			[
+				"mapeng",
+				"Assets/Service/Noraneco/Map/MapEngine/MapEngine.cs"
+			],
+			[
+				"titlesce",
+				"Assets/Service/Noraneco/Scenes/TitleScene.cs"
+			],
+			[
+				"statem",
+				"Assets/Service/Noraneco/StateMachines/Initialize/StateMachine/InitializeStateLoadMaster.cs"
+			],
+			[
+				"titlecon",
+				"Assets/Service/Noraneco/UIModule/Controllers/TitleController.cs"
+			],
+			[
+				"sound",
+				"Assets/Service/Noraneco/Engine/Sound.cs"
+			],
+			[
+				"noranecosoun",
+				"Assets/Service/Noraneco/Engine/NoranecoSoundEngine.cs"
+			],
+			[
+				"",
+				"Assets/Assets3D/Effects/zzz_Others/Connector/Connector.cs"
+			],
+			[
+				"soldier",
+				"Assets/Service/Noraneco/Map/FieldObject/Character/Soldier.cs"
+			],
+			[
+				"ftanimatingmesh",
+				"Assets/Service/System/FTMesh/FTAnimatingMesh.cs"
+			],
+			[
+				"mapengine",
+				"Assets/Service/Noraneco/Map/MapEngine/MapEngine.cs"
+			],
+			[
+				"assetlo",
+				"Assets/Service/Noraneco/AssetBundle/AssetLoader.cs"
+			],
+			[
+				"master",
+				"Assets/Service/Noraneco/Master/MasterManager.cs"
+			],
+			[
+				"battlemana",
+				"Assets/Service/Noraneco/Map/BattleManager.cs"
+			],
+			[
+				"masterfieldobjectlevel.c",
+				"Assets/Service/Noraneco/Master/Scripts/MasterFieldObjectLevel.cs"
+			],
+			[
+				"worldcity",
+				"Assets/Service/Noraneco/Master/Scripts/Generated/WorldCity.cs"
+			],
+			[
+				"conquestcityinfouiparameter",
+				"Assets/Service/Noraneco/UIModule/Parameter/ConquestCityInfoUIParameter.cs"
+			],
+			[
+				"mapobj",
+				"Assets/Service/Noraneco/Dev/MapEditor/MapObject.cs"
+			],
+			[
+				"masterfieldobject",
+				"Assets/Service/Noraneco/Master/Scripts/MasterFieldObject.cs"
+			],
+			[
+				"ftmesh",
+				"Assets/Service/System/FTMesh/FTMesh.cs"
+			],
+			[
+				"mapassetmanager",
+				"Assets/Service/Noraneco/Map/MapAssetManager/MapAssetManager.cs"
+			],
+			[
+				"mapassetmanagermesh",
+				"Assets/Service/Noraneco/Map/MapAssetManager/MapAssetManagerMesh.cs"
+			],
+			[
+				"mastersound",
+				"Assets/Service/Noraneco/Master/Scripts/Sound.cs"
+			],
+			[
+				"battleco",
+				"Assets/Service/Noraneco/UIModule/Controllers/BattleController.cs"
+			],
+			[
+				"battlehudswidget",
+				"Assets/Service/Noraneco/UIModule/Generated/BattleHudsWidget.cs"
+			],
+			[
+				"soundeng",
+				"Assets/Service/Noraneco/Engine/NoranecoSoundEngine.cs"
+			],
+			[
+				"battlel",
+				"Assets/Service/Noraneco/UIModule/Utility/BattleLauncher.cs"
+			],
+			[
+				"assetloa",
+				"Assets/Service/Noraneco/AssetBundle/AssetLoader.cs"
+			],
+			[
+				"uibutt",
+				"Assets/Service/Common/UIModule/Components/UIButton.cs"
+			],
+			[
+				"mapinp",
+				"Assets/Service/Common/StateMachines/MapInput/MapInput.cs"
+			],
+			[
+				"spawnpoint",
+				"Assets/Service/Noraneco/Dev/Editor/FieldEditor/Manager/SpawnPointManager.cs"
+			],
+			[
+				"fielde",
+				"Assets/Service/Noraneco/Dev/Editor/FieldEditor/Editor/FieldEditor.cs"
+			],
+			[
+				"battleengine",
+				"Assets/Service/Noraneco/Plugin/BattleEngine.cs"
+			],
+			[
+				"mapasset",
+				"Assets/Service/Noraneco/Map/MapAssetManager/MapAssetManager.cs"
+			],
+			[
+				"battleinfo",
+				"Assets/Service/Noraneco/Plugin/BattleInfo.cs"
+			],
+			[
+				"pvpstar",
+				"Assets/Service/Noraneco/Engine/Communication/Commands/BattlePvpStart.cs"
+			],
+			[
+				"battlee",
+				"Assets/Service/Noraneco/Plugin/BattleEngine.cs"
+			],
+			[
+				"battlemanager",
+				"Assets/Service/Noraneco/Map/BattleManager.cs"
+			],
+			[
+				"battletimecounterwidget",
+				"Assets/Service/Noraneco/UIModule/Generated/BattleTimeCounterWidget.cs"
+			],
+			[
+				"battletim",
+				"Assets/Service/Noraneco/UIModule/Generated/BattleTimeCounterWidget.cs"
+			],
+			[
+				"item",
+				"Assets/Service/Noraneco/GameData/Player/Item.cs"
+			],
+			[
+				"fieldobject",
+				"Assets/Service/Noraneco/Map/FieldObject/FieldObject.cs"
+			],
+			[
+				"ibuilding",
+				"Assets/Service/Noraneco/Map/Interface/IBuilding.cs"
+			],
+			[
+				"modelbase",
+				"Assets/Service/Noraneco/Map/Model/ModelBase.cs"
+			],
+			[
+				"battleen",
+				"Assets/Service/Noraneco/Plugin/BattleEngine.cs"
+			],
+			[
+				"gamedatamanager",
+				"Assets/Service/Noraneco/GameData/GameDataManager.cs"
+			],
+			[
+				"initializestateloadplayer",
+				"Assets/Service/Noraneco/StateMachines/Initialize/StateMachine/InitializeStateLoadPlayer.cs"
+			],
+			[
+				"segment",
+				"Assets/Service/Noraneco/Dev/MapEditor/Segment.cs"
+			],
+			[
+				"soldier.cs",
+				"Assets/Service/Noraneco/Map/FieldObject/Character/Soldier.cs"
+			],
+			[
+				"deckcollection",
+				"Assets/Service/Noraneco/GameData/Player/DeckCollection.cs"
+			],
+			[
+				"changeequipmentdeckcontroller",
+				"Assets/Service/Noraneco/UIModule/Controllers/ChangeEquipmentDeckController.cs"
+			],
+			[
+				"uimanager",
+				"Assets/Service/Common/Engine/UIManager.cs"
+			],
+			[
+				"battleengi",
+				"Assets/Service/Noraneco/Plugin/BattleEngine.cs"
+			],
+			[
+				"soldierpool",
+				"Assets/Service/Noraneco/Map/Pool/SoldierPool.cs"
+			],
+			[
+				"battlecon",
+				"Assets/Service/Noraneco/UIModule/Controllers/BattleController.cs"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 449.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 326.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
